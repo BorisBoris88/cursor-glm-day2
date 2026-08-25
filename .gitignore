@@ -1,0 +1,38 @@
+# Виртуальное окружение
+.venv/
+venv/
+env/
+
+# Байткод и кэш Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Базы данных и логи
+*.db
+*.log
+
+# Тесты и инструменты
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Сборка и дистрибутивы
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE и ОС
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+.DS_Store
+
+# Секреты и локальные настройки
+.env
+.env.*

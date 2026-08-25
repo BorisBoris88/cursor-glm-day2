@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Стартовая страница проекта. Редактируйте index.html, чтобы начать разработку.">
+  <meta name="color-scheme" content="dark">
+  <title>Добро пожаловать</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="cyber-grid" aria-hidden="true"></div>
+  <div class="matrix-rain" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="site-header__brand">
+      <span class="site-header__title">NeonShadow</span>
+      <span class="site-header__user" id="headerUsername" hidden aria-live="polite"></span>
+    </div>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <a href="index.html" class="site-nav__link site-nav__link--active">Главная</a>
+      <a href="about.html" class="site-nav__link">О нас</a>
+      <a href="contact.html" class="site-nav__link">Контакты</a>
+      <button type="button" class="site-nav__logout" id="logoutBtn">Выйти</button>
+    </nav>
+  </header>
+  <aside class="weather-widget weather-widget--loading" id="weatherWidget" aria-label="Погода в Москве">
+    <span class="weather-widget__icon" id="weatherIcon" aria-hidden="true">⏳</span>
+    <div class="weather-widget__info">
+      <span class="weather-widget__temp" id="weatherTemp">—</span>
+      <span class="weather-widget__city">Москва</span>
+    </div>
+  </aside>
+  <main>
+    <div class="hacker-card">
+      <div class="hacker-avatar">
+        <svg viewBox="0 0 64 64">
+          <ellipse cx="32" cy="36" rx="24" ry="14" fill="#22243c"/>
+          <ellipse cx="32" cy="34" rx="19" ry="12" fill="#18181b"/>
+          <ellipse cx="32" cy="32" rx="17" ry="10" fill="#23243d"/>
+          <rect x="19" y="24" width="26" height="12" rx="7" fill="#23243d"/>
+          <ellipse cx="25" cy="36" rx="4" ry="3" fill="#10ffe7"/>
+          <ellipse cx="39" cy="36" rx="4" ry="3" fill="#9a6cff"/>
+          <ellipse cx="32" cy="43" rx="7.5" ry="2.5" fill="#0ff7" fill-opacity="0.44"/>
+        </svg>
+      </div>
+      <div class="hacker-nick">NeonShadow</div>
+      <div class="hacker-desc">
+        👾 Профиль хакера: <b>NeonShadow</b><br>
+        Уровень доступа: <span style="color:#ad54fa">root</span><br>
+        Опасность: <span style="color:#f72485;">CRITICAL</span><br>
+        - Гуру взлома<br>
+        - Любимая команда: <code>sudo rm -rf /</code><br>
+        - Специализация: кибер-фантазии, неоновые туннели
+      </div>
+      <button type="button" class="hack-btn" id="hackBtn">Взломать базу</button>
+    </div>
+    <section class="news-feed news-feed--loading" id="newsFeed" aria-label="Новости Hacker News">
+      <h2 class="news-feed__title">Hacker News</h2>
+      <p class="news-feed__status" id="newsStatus">Загрузка ленты…</p>
+      <div class="news-feed__list" id="newsList"></div>
+    </section>
+  </main>
+  <div class="chat-widget" id="chatWidget">
+    <button type="button" class="chat-toggle" id="chatToggle" aria-label="Открыть чат">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+        <path fill="currentColor" d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+      </svg>
+    </button>
+    <div class="chat-panel" id="chatPanel" role="dialog" aria-label="Чат с ботом">
+      <header class="chat-panel__header">
+        <span class="chat-panel__title">NeonBot</span>
+        <span class="chat-panel__status">online</span>
+        <button type="button" class="chat-panel__close" id="chatClose" aria-label="Закрыть чат">×</button>
+      </header>
+      <div class="chat-panel__messages" id="chatMessages" role="log" aria-live="polite"></div>
+      <form class="chat-panel__form" id="chatForm">
+        <input
+          type="text"
+          class="chat-panel__input"
+          id="chatInput"
+          placeholder="Введите сообщение..."
+          autocomplete="off"
+          maxlength="500"
+        >
+        <button type="submit" class="chat-panel__send" aria-label="Отправить">➤</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/api.js?v=widgets"></script>
+  <script src="js/session.js?v=widgets"></script>
+  <script src="js/logout.js?v=widgets"></script>
+  <script src="js/weather.js?v=widgets"></script>
+  <script src="js/aliases.js?v=widgets"></script>
+  <script src="js/news.js?v=widgets"></script>
+  <script src="js/chat.js?v=widgets"></script>
+</body>
+</html>

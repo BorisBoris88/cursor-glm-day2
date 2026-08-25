@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>Вход</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-login">
+  <div class="cyber-grid" aria-hidden="true"></div>
+  <div class="matrix-rain" aria-hidden="true"></div>
+  <header class="site-header">
+    <span class="site-header__title">NeonShadow</span>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <a href="index.html" class="site-nav__link">Главная</a>
+      <a href="about.html" class="site-nav__link">О нас</a>
+      <a href="contact.html" class="site-nav__link">Контакты</a>
+      <a href="/login" class="site-nav__link site-nav__link--active">Вход</a>
+    </nav>
+  </header>
+  <main class="page-login__main">
+    <section class="login-form" aria-labelledby="loginTitle">
+      <h1 class="login-form__title" id="loginTitle">Доступ к системе</h1>
+      <div class="login-form__tabs" role="tablist" aria-label="Вход и регистрация">
+        <button
+          type="button"
+          class="login-form__tab login-form__tab--active"
+          id="loginTab"
+          role="tab"
+          aria-selected="true"
+          aria-controls="loginPanel"
+        >Вход</button>
+        <button
+          type="button"
+          class="login-form__tab"
+          id="registerTab"
+          role="tab"
+          aria-selected="false"
+          aria-controls="registerPanel"
+        >Регистрация</button>
+      </div>
+      <p class="login-form__hint" id="loginHint">Введите учётные данные для входа в неоновый сектор.</p>
+      <form class="login-form__body" id="loginForm" role="tabpanel" aria-labelledby="loginTab" novalidate>
+        <label class="login-form__field">
+          <span class="login-form__label">Логин</span>
+          <input
+            type="text"
+            class="login-form__input"
+            id="loginInput"
+            name="username"
+            autocomplete="username"
+            required
+            maxlength="64"
+          >
+        </label>
+        <label class="login-form__field">
+          <span class="login-form__label">Пароль</span>
+          <input
+            type="password"
+            class="login-form__input"
+            id="passwordInput"
+            name="password"
+            autocomplete="current-password"
+            required
+            maxlength="128"
+          >
+        </label>
+        <p class="login-form__error" id="loginError" role="alert" hidden>Доступ запрещен</p>
+        <button type="submit" class="login-form__submit hack-btn">Войти</button>
+      </form>
+      <form
+        class="login-form__body login-form__body--hidden"
+        id="registerForm"
+        role="tabpanel"
+        aria-labelledby="registerTab"
+        hidden
+        novalidate
+      >
+        <label class="login-form__field">
+          <span class="login-form__label">Логин</span>
+          <input
+            type="text"
+            class="login-form__input"
+            id="registerUsernameInput"
+            name="username"
+            autocomplete="username"
+            required
+            maxlength="64"
+          >
+        </label>
+        <label class="login-form__field">
+          <span class="login-form__label">Пароль</span>
+          <input
+            type="password"
+            class="login-form__input"
+            id="registerPasswordInput"
+            name="password"
+            autocomplete="new-password"
+            required
+            maxlength="128"
+          >
+        </label>
+        <p class="login-form__error" id="registerError" role="alert" hidden>Не удалось зарегистрироваться</p>
+        <button type="submit" class="login-form__submit hack-btn">Создать аккаунт</button>
+      </form>
+    </section>
+  </main>
+  <script src="js/api.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

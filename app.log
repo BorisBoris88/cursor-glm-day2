@@ -1,0 +1,1781 @@
+2026-08-19 16:09:34 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-19 16:09:34 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-19 16:10:20 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 304 -
+2026-08-19 16:10:20 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-19 16:10:20 [INFO] __main__: 127.0.0.1 - "GET /js/app.js HTTP/1.1" 304 -
+2026-08-19 16:10:20 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js HTTP/1.1" 304 -
+2026-08-19 16:10:21 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 16:10:21 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 16:10:22 [INFO] __main__: 127.0.0.1 - code 404, message File not found
+2026-08-19 16:10:22 [INFO] __main__: 127.0.0.1 - "GET /favicon.ico HTTP/1.1" 404 -
+2026-08-19 16:10:22 [INFO] __main__: 127.0.0.1 - code 404, message File not found
+2026-08-19 16:10:22 [INFO] __main__: 127.0.0.1 - "GET /favicon.ico HTTP/1.1" 404 -
+2026-08-19 16:10:25 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 16:11:57 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 16:12:20 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 16:12:50 [INFO] __main__: Сервер остановлен.
+2026-08-19 16:15:27 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-19 16:15:27 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-19 16:15:45 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 16:15:45 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 16:15:46 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 16:15:52 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 16:16:55 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 16:16:59 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 304 -
+2026-08-19 16:16:59 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 16:16:59 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 16:17:01 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 16:17:06 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 16:17:16 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 304 -
+2026-08-19 16:17:16 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 304 -
+2026-08-19 16:17:16 [INFO] __main__: 127.0.0.1 - "GET /js/app.js HTTP/1.1" 304 -
+2026-08-19 16:17:16 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js HTTP/1.1" 304 -
+2026-08-19 16:17:16 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 16:17:17 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 16:17:18 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 16:17:24 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 16:20:47 [INFO] __main__: Сервер остановлен.
+2026-08-19 16:21:06 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-19 16:21:06 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-19 16:21:19 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 16:21:19 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 16:21:19 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 16:21:21 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 16:21:26 [ERROR] __main__: Ошибка записи сообщения в базу
+Traceback (most recent call last):
+  File "C:\_projects\cursor-glm\cursor-glm-day2\server.py", line 227, in do_POST
+    message_id = save_message(username, text)
+  File "C:\_projects\cursor-glm\cursor-glm-day2\database.py", line 40, in save_message
+    cursor = connection.execute(
+        """
+    ...<3 lines>...
+        (username, text, timestamp),
+    )
+sqlite3.OperationalError: no such table: messages_history
+2026-08-19 16:21:26 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 500 -
+2026-08-19 16:22:54 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 16:22:54 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 16:22:56 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 16:23:12 [ERROR] __main__: Ошибка записи сообщения в базу
+Traceback (most recent call last):
+  File "C:\_projects\cursor-glm\cursor-glm-day2\server.py", line 227, in do_POST
+    message_id = save_message(username, text)
+  File "C:\_projects\cursor-glm\cursor-glm-day2\database.py", line 40, in save_message
+    cursor = connection.execute(
+        """
+    ...<3 lines>...
+        (username, text, timestamp),
+    )
+sqlite3.OperationalError: no such table: messages_history
+2026-08-19 16:23:12 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 500 -
+2026-08-19 16:24:21 [INFO] __main__: Сервер остановлен.
+2026-08-19 16:25:29 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-19 16:25:29 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-19 16:25:46 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 16:25:46 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 16:25:48 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 16:25:59 [ERROR] __main__: Ошибка записи сообщения в базу
+Traceback (most recent call last):
+  File "C:\_projects\cursor-glm\cursor-glm-day2\server.py", line 227, in do_POST
+    message_id = save_message(username, text)
+  File "C:\_projects\cursor-glm\cursor-glm-day2\database.py", line 40, in save_message
+    cursor = connection.execute(
+        """
+    ...<3 lines>...
+        (username, text, timestamp),
+    )
+sqlite3.OperationalError: no such table: messages_history
+2026-08-19 16:25:59 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 500 -
+2026-08-19 16:28:27 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 16:28:28 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 16:28:29 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 16:28:35 [ERROR] __main__: Ошибка записи сообщения в базу
+Traceback (most recent call last):
+  File "C:\_projects\cursor-glm\cursor-glm-day2\server.py", line 227, in do_POST
+    message_id = save_message(username, text)
+  File "C:\_projects\cursor-glm\cursor-glm-day2\database.py", line 40, in save_message
+    cursor = connection.execute(
+        """
+    ...<3 lines>...
+        (username, text, timestamp),
+    )
+sqlite3.OperationalError: no such table: messages_history
+2026-08-19 16:28:35 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 500 -
+2026-08-19 16:34:34 [INFO] __main__: Сервер остановлен.
+2026-08-19 16:35:58 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-19 16:35:58 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-19 16:36:05 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 16:36:06 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 16:36:06 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 16:36:07 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 16:36:21 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 16:37:17 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 16:37:17 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 16:37:17 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 16:37:17 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 16:37:17 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 304 -
+2026-08-19 16:37:17 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 16:37:18 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 16:37:20 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 16:37:29 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 16:37:39 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 16:38:33 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 16:38:33 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-19 16:38:33 [INFO] __main__: 127.0.0.1 - "GET /js/app.js HTTP/1.1" 200 -
+2026-08-19 16:38:33 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js HTTP/1.1" 200 -
+2026-08-19 16:38:34 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 16:38:34 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 16:39:36 [INFO] __main__: Сервер остановлен.
+2026-08-19 16:44:50 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-19 16:44:50 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-19 16:45:02 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 16:45:02 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 16:45:02 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 16:45:19 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 16:45:34 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 16:46:09 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 304 -
+2026-08-19 16:46:10 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 16:46:10 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 16:46:16 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 16:49:38 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-19 16:49:38 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360242.json "HTTP/1.1 200 OK"
+2026-08-19 16:49:39 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360545.json "HTTP/1.1 200 OK"
+2026-08-19 16:49:39 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49355606.json "HTTP/1.1 200 OK"
+2026-08-19 16:49:39 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49359425.json "HTTP/1.1 200 OK"
+2026-08-19 16:49:39 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360015.json "HTTP/1.1 200 OK"
+2026-08-19 16:49:39 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-19 16:51:56 [INFO] __main__: Сервер остановлен.
+2026-08-19 16:52:11 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-19 16:52:11 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-19 16:52:16 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 16:52:16 [INFO] __main__: 127.0.0.1 - "GET /js/app.js?v=news HTTP/1.1" 200 -
+2026-08-19 16:52:16 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=news HTTP/1.1" 200 -
+2026-08-19 16:52:16 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 16:52:17 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:17 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360242.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:17 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360015.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:17 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49355606.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:17 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360545.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:17 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49361279.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:17 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-19 16:52:17 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 16:52:20 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 16:52:20 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-19 16:52:20 [INFO] __main__: 127.0.0.1 - "GET /js/app.js?v=news HTTP/1.1" 200 -
+2026-08-19 16:52:20 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=news HTTP/1.1" 200 -
+2026-08-19 16:52:20 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 16:52:21 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:21 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360242.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:21 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49355606.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:21 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49361279.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:21 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360015.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:21 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360545.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:21 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-19 16:52:21 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 16:52:21 [INFO] __main__: 127.0.0.1 - code 404, message File not found
+2026-08-19 16:52:21 [INFO] __main__: 127.0.0.1 - "GET /favicon.ico HTTP/1.1" 404 -
+2026-08-19 16:52:22 [INFO] __main__: 127.0.0.1 - code 404, message File not found
+2026-08-19 16:52:22 [INFO] __main__: 127.0.0.1 - "GET /favicon.ico HTTP/1.1" 404 -
+2026-08-19 16:52:54 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:54 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360242.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:54 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49355606.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:54 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49361279.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:54 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360015.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:54 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360545.json "HTTP/1.1 200 OK"
+2026-08-19 16:52:54 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-19 16:58:45 [INFO] __main__: Сервер остановлен.
+2026-08-19 16:59:05 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-19 16:59:05 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-19 16:59:16 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 16:59:16 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-19 16:59:17 [INFO] __main__: 127.0.0.1 - "GET /js/app.js?v=news HTTP/1.1" 200 -
+2026-08-19 16:59:17 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=news HTTP/1.1" 200 -
+2026-08-19 16:59:17 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 16:59:18 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-19 16:59:18 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360242.json "HTTP/1.1 200 OK"
+2026-08-19 16:59:18 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49355606.json "HTTP/1.1 200 OK"
+2026-08-19 16:59:18 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360545.json "HTTP/1.1 200 OK"
+2026-08-19 16:59:18 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360015.json "HTTP/1.1 200 OK"
+2026-08-19 16:59:18 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49361279.json "HTTP/1.1 200 OK"
+2026-08-19 16:59:19 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=PostgreSQL+for+Everything "HTTP/1.1 200 OK"
+2026-08-19 16:59:19 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=GrapheneOS+in+2027+available+on+high-end+Motorola+phones "HTTP/1.1 200 OK"
+2026-08-19 16:59:19 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=OpenLogi "HTTP/1.1 200 OK"
+2026-08-19 16:59:19 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=A+joke+domain+purchase+turned+in+geopolitical+warfare "HTTP/1.1 200 OK"
+2026-08-19 16:59:19 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Geolocating+a+random+island+using+geometry+and+CUDA+programming "HTTP/1.1 200 OK"
+2026-08-19 16:59:19 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-19 16:59:19 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 17:10:22 [INFO] __main__: 127.0.0.1 - code 404, message File not found
+2026-08-19 17:10:22 [INFO] __main__: 127.0.0.1 - "GET /apple-touch-icon.png HTTP/1.1" 404 -
+2026-08-19 17:10:22 [INFO] __main__: 127.0.0.1 - code 404, message File not found
+2026-08-19 17:10:22 [INFO] __main__: 127.0.0.1 - "GET /favicon.ico HTTP/1.1" 404 -
+2026-08-19 17:11:23 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 17:11:23 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 17:11:23 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 17:11:23 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 17:11:23 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-19 17:11:23 [INFO] __main__: 127.0.0.1 - "GET /js/app.js?v=news HTTP/1.1" 200 -
+2026-08-19 17:11:23 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=news HTTP/1.1" 200 -
+2026-08-19 17:11:24 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 17:11:34 [ERROR] __main__: Новости недоступны
+Traceback (most recent call last):
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\httpx\_transports\default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\httpcore\_async\connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\httpcore\_async\connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        pool_request.request
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\httpcore\_async\connection.py", line 101, in handle_async_request
+    raise exc
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\httpcore\_async\connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\httpcore\_async\connection.py", line 156, in _connect
+    stream = await stream.start_tls(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\httpcore\_backends\anyio.py", line 67, in start_tls
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\_projects\cursor-glm\cursor-glm-day2\api_client.py", line 139, in _request_json
+    response = await client.get(url)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\httpx\_client.py", line 1768, in get
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+    )
+    ^
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\httpx\_client.py", line 1540, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\httpx\_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\httpx\_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\httpx\_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\httpx\_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\httpx\_transports\default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\_projects\cursor-glm\cursor-glm-day2\server.py", line 173, in do_GET
+    articles = asyncio.run(fetch_top_articles())
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 205, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\runners.py", line 128, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Boris\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\_projects\cursor-glm\cursor-glm-day2\api_client.py", line 185, in fetch_top_articles
+    story_ids = await fetch_top_story_ids(limit, client=client)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\_projects\cursor-glm\cursor-glm-day2\api_client.py", line 165, in fetch_top_story_ids
+    return await _load(client)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\_projects\cursor-glm\cursor-glm-day2\api_client.py", line 161, in _load
+    payload = await _request_json(active_client, TOP_STORIES_URL)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\_projects\cursor-glm\cursor-glm-day2\api_client.py", line 143, in _request_json
+    raise NewsApiError("Истекло время ожидания Hacker News") from exc
+api_client.NewsApiError: Истекло время ожидания Hacker News
+2026-08-19 17:11:35 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 502 -
+2026-08-19 17:11:35 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 17:12:09 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 17:12:09 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-19 17:12:09 [INFO] __main__: 127.0.0.1 - "GET /js/app.js?v=news HTTP/1.1" 200 -
+2026-08-19 17:12:09 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=news HTTP/1.1" 200 -
+2026-08-19 17:12:09 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 17:12:10 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-19 17:12:10 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360242.json "HTTP/1.1 200 OK"
+2026-08-19 17:12:10 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360015.json "HTTP/1.1 200 OK"
+2026-08-19 17:12:10 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49355606.json "HTTP/1.1 200 OK"
+2026-08-19 17:12:10 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49361279.json "HTTP/1.1 200 OK"
+2026-08-19 17:12:10 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360545.json "HTTP/1.1 200 OK"
+2026-08-19 17:12:10 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-19 17:12:10 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 17:12:22 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 17:12:36 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 17:12:45 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 17:14:36 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 17:14:43 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 17:14:53 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 17:15:06 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 17:15:06 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-19 17:15:07 [INFO] __main__: 127.0.0.1 - "GET /js/app.js?v=news HTTP/1.1" 200 -
+2026-08-19 17:15:07 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=news HTTP/1.1" 200 -
+2026-08-19 17:15:07 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 17:15:08 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-19 17:15:08 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360242.json "HTTP/1.1 200 OK"
+2026-08-19 17:15:08 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360545.json "HTTP/1.1 200 OK"
+2026-08-19 17:15:08 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360015.json "HTTP/1.1 200 OK"
+2026-08-19 17:15:08 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49355606.json "HTTP/1.1 200 OK"
+2026-08-19 17:15:08 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49361279.json "HTTP/1.1 200 OK"
+2026-08-19 17:15:08 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-19 17:15:08 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 17:16:22 [INFO] __main__: Сервер остановлен.
+2026-08-19 17:38:26 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-19 17:38:26 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-19 17:38:35 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 17:38:35 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-19 17:38:35 [INFO] __main__: 127.0.0.1 - "GET /js/app.js?v=news HTTP/1.1" 200 -
+2026-08-19 17:38:36 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=news HTTP/1.1" 200 -
+2026-08-19 17:38:36 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 17:38:36 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-19 17:38:37 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360242.json "HTTP/1.1 200 OK"
+2026-08-19 17:38:37 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49361279.json "HTTP/1.1 200 OK"
+2026-08-19 17:38:37 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49355606.json "HTTP/1.1 200 OK"
+2026-08-19 17:38:37 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360545.json "HTTP/1.1 200 OK"
+2026-08-19 17:38:37 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360015.json "HTTP/1.1 200 OK"
+2026-08-19 17:38:37 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Geolocating+a+random+island+using+geometry+and+CUDA+programming "HTTP/1.1 200 OK"
+2026-08-19 17:38:37 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=OpenLogi "HTTP/1.1 200 OK"
+2026-08-19 17:38:37 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=GrapheneOS+in+2027+available+on+high-end+Motorola+phones "HTTP/1.1 200 OK"
+2026-08-19 17:38:37 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=A+joke+domain+purchase+turned+in+geopolitical+warfare "HTTP/1.1 200 OK"
+2026-08-19 17:38:37 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=PostgreSQL+for+Everything "HTTP/1.1 200 OK"
+2026-08-19 17:38:37 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-19 17:38:37 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 17:38:50 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 17:39:09 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 17:39:31 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 17:39:45 [INFO] __main__: 127.0.0.1 - "GET /about.html HTTP/1.1" 200 -
+2026-08-19 17:39:46 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-19 17:39:49 [INFO] __main__: 127.0.0.1 - "GET /contact.html HTTP/1.1" 200 -
+2026-08-19 17:39:49 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-19 17:39:55 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 200 -
+2026-08-19 17:39:55 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-19 17:39:56 [INFO] __main__: 127.0.0.1 - "GET /js/app.js?v=news HTTP/1.1" 200 -
+2026-08-19 17:39:56 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=news HTTP/1.1" 200 -
+2026-08-19 17:39:56 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 17:39:57 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-19 17:39:57 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360242.json "HTTP/1.1 200 OK"
+2026-08-19 17:39:57 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49361279.json "HTTP/1.1 200 OK"
+2026-08-19 17:39:57 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360545.json "HTTP/1.1 200 OK"
+2026-08-19 17:39:57 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49355606.json "HTTP/1.1 200 OK"
+2026-08-19 17:39:57 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360015.json "HTTP/1.1 200 OK"
+2026-08-19 17:39:57 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-19 17:39:57 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 17:41:29 [INFO] __main__: Сервер остановлен.
+2026-08-19 17:46:18 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-19 17:46:18 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-19 17:46:48 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 17:46:48 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-19 17:46:48 [INFO] __main__: 127.0.0.1 - "GET /js/app.js?v=news HTTP/1.1" 200 -
+2026-08-19 17:46:48 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=news HTTP/1.1" 200 -
+2026-08-19 17:46:48 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 17:46:49 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-19 17:46:49 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360242.json "HTTP/1.1 200 OK"
+2026-08-19 17:46:49 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360015.json "HTTP/1.1 200 OK"
+2026-08-19 17:46:49 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360545.json "HTTP/1.1 200 OK"
+2026-08-19 17:46:49 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49361279.json "HTTP/1.1 200 OK"
+2026-08-19 17:46:49 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49355606.json "HTTP/1.1 200 OK"
+2026-08-19 17:46:50 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=PostgreSQL+for+Everything "HTTP/1.1 200 OK"
+2026-08-19 17:46:50 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Geolocating+a+random+island+using+geometry+and+CUDA+programming "HTTP/1.1 200 OK"
+2026-08-19 17:46:50 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=A+joke+domain+purchase+turned+in+geopolitical+warfare "HTTP/1.1 200 OK"
+2026-08-19 17:46:50 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=OpenLogi "HTTP/1.1 200 OK"
+2026-08-19 17:46:50 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=GrapheneOS+in+2027+available+on+high-end+Motorola+phones "HTTP/1.1 200 OK"
+2026-08-19 17:46:50 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-19 17:46:50 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 17:47:15 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 17:47:24 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 17:47:30 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 17:47:51 [INFO] __main__: Сервер остановлен.
+2026-08-19 17:51:35 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-19 17:51:35 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-19 17:52:01 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 17:52:02 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-19 17:52:02 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 17:52:02 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 17:52:02 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 17:52:02 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 17:52:02 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 17:52:03 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 17:52:03 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-19 17:52:03 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360242.json "HTTP/1.1 200 OK"
+2026-08-19 17:52:04 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49361279.json "HTTP/1.1 200 OK"
+2026-08-19 17:52:04 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360015.json "HTTP/1.1 200 OK"
+2026-08-19 17:52:04 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49355606.json "HTTP/1.1 200 OK"
+2026-08-19 17:52:04 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360545.json "HTTP/1.1 200 OK"
+2026-08-19 17:52:04 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=PostgreSQL+for+Everything "HTTP/1.1 200 OK"
+2026-08-19 17:52:04 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=GrapheneOS+in+2027+available+on+high-end+Motorola+phones "HTTP/1.1 200 OK"
+2026-08-19 17:52:04 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=A+joke+domain+purchase+turned+in+geopolitical+warfare "HTTP/1.1 200 OK"
+2026-08-19 17:52:04 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=OpenLogi "HTTP/1.1 200 OK"
+2026-08-19 17:52:04 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Geolocating+a+random+island+using+geometry+and+CUDA+programming "HTTP/1.1 200 OK"
+2026-08-19 17:52:04 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-19 17:52:04 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 17:52:16 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 17:52:30 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 17:54:31 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 17:54:31 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-19 17:54:31 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 17:54:31 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 17:54:31 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 17:54:31 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 17:54:31 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 17:54:32 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 17:54:32 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-19 17:54:32 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360242.json "HTTP/1.1 200 OK"
+2026-08-19 17:54:33 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49361279.json "HTTP/1.1 200 OK"
+2026-08-19 17:54:33 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360545.json "HTTP/1.1 200 OK"
+2026-08-19 17:54:33 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49355606.json "HTTP/1.1 200 OK"
+2026-08-19 17:54:33 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360015.json "HTTP/1.1 200 OK"
+2026-08-19 17:54:33 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-19 17:54:33 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 18:05:28 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 18:05:28 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-19 18:05:28 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 18:05:28 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 18:05:28 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 18:05:28 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 18:05:28 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 18:05:29 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 18:05:29 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-19 18:05:29 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360242.json "HTTP/1.1 200 OK"
+2026-08-19 18:05:30 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49355606.json "HTTP/1.1 200 OK"
+2026-08-19 18:05:30 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49361279.json "HTTP/1.1 200 OK"
+2026-08-19 18:05:30 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360545.json "HTTP/1.1 200 OK"
+2026-08-19 18:05:30 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360015.json "HTTP/1.1 200 OK"
+2026-08-19 18:05:30 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-19 18:05:30 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 18:05:35 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 18:05:42 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 18:05:47 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 18:05:54 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 18:29:09 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 18:29:09 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-19 18:29:09 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 18:29:10 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 18:29:10 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 18:29:10 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 18:29:10 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 18:29:10 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 18:29:11 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-19 18:29:11 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360242.json "HTTP/1.1 200 OK"
+2026-08-19 18:29:11 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360015.json "HTTP/1.1 200 OK"
+2026-08-19 18:29:11 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360545.json "HTTP/1.1 200 OK"
+2026-08-19 18:29:11 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49355606.json "HTTP/1.1 200 OK"
+2026-08-19 18:29:11 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49361279.json "HTTP/1.1 200 OK"
+2026-08-19 18:29:11 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-19 18:29:11 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 18:29:45 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 18:29:51 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 18:30:04 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-19 18:30:19 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-19 18:30:24 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-19 18:30:24 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-19 18:30:25 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 18:30:25 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 18:30:25 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 18:30:25 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 18:30:25 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-19 18:30:25 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-19 18:30:26 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-19 18:30:26 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360242.json "HTTP/1.1 200 OK"
+2026-08-19 18:30:26 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360015.json "HTTP/1.1 200 OK"
+2026-08-19 18:30:26 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49360545.json "HTTP/1.1 200 OK"
+2026-08-19 18:30:26 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49355606.json "HTTP/1.1 200 OK"
+2026-08-19 18:30:26 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49361279.json "HTTP/1.1 200 OK"
+2026-08-19 18:30:26 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-19 18:30:26 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-19 18:30:29 [INFO] __main__: Сервер остановлен.
+2026-08-22 03:51:58 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-22 03:51:58 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-22 03:54:32 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-22 03:54:32 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-22 03:54:32 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-22 03:54:32 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-22 03:54:32 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-22 03:54:32 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-22 03:54:32 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-22 03:54:33 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-22 03:54:33 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-22 03:54:34 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49390427.json "HTTP/1.1 200 OK"
+2026-08-22 03:54:34 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49388154.json "HTTP/1.1 200 OK"
+2026-08-22 03:54:34 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49389430.json "HTTP/1.1 200 OK"
+2026-08-22 03:54:34 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49394496.json "HTTP/1.1 200 OK"
+2026-08-22 03:54:34 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49392200.json "HTTP/1.1 200 OK"
+2026-08-22 03:54:34 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Kobo+can+run+apps+now "HTTP/1.1 200 OK"
+2026-08-22 03:54:34 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Felony+Bench "HTTP/1.1 200 OK"
+2026-08-22 03:54:34 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Scientists+release+biggest+2D+map+of+the+universe "HTTP/1.1 200 OK"
+2026-08-22 03:54:34 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Kagi+added+a+setting+for+removing+paywalled+links+from+search+results "HTTP/1.1 200 OK"
+2026-08-22 03:54:35 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Three+important+steps+in+my+maturation+process "HTTP/1.1 200 OK"
+2026-08-22 03:54:35 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-22 03:54:35 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-22 03:54:35 [INFO] __main__: 127.0.0.1 - code 404, message File not found
+2026-08-22 03:54:35 [INFO] __main__: 127.0.0.1 - "GET /favicon.ico HTTP/1.1" 404 -
+2026-08-22 03:54:35 [INFO] __main__: 127.0.0.1 - code 404, message File not found
+2026-08-22 03:54:35 [INFO] __main__: 127.0.0.1 - "GET /favicon.ico HTTP/1.1" 404 -
+2026-08-22 03:58:10 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-22 03:58:45 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-23 23:13:38 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-23 23:13:38 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-23 23:13:38 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-23 23:13:39 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-23 23:13:39 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-23 23:13:39 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-23 23:13:39 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-23 23:13:39 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-23 23:13:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-23 23:13:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49410362.json "HTTP/1.1 200 OK"
+2026-08-23 23:13:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411468.json "HTTP/1.1 200 OK"
+2026-08-23 23:13:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411643.json "HTTP/1.1 200 OK"
+2026-08-23 23:13:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49409473.json "HTTP/1.1 200 OK"
+2026-08-23 23:13:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49409862.json "HTTP/1.1 200 OK"
+2026-08-23 23:13:40 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Why+Sal+Khan%27t%3A+On+Learning+by+Making+but+Teaching+by+Telling "HTTP/1.1 429 Too Many Requests"
+2026-08-23 23:13:40 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Fable+and+the+End+of+the+Free+Lunch "HTTP/1.1 429 Too Many Requests"
+2026-08-23 23:13:40 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=How+I+Find+Problems+to+Solve+as+a+Staff+Engineer "HTTP/1.1 429 Too Many Requests"
+2026-08-23 23:13:41 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=How+Complex+Systems+Fail+%281998%29 "HTTP/1.1 429 Too Many Requests"
+2026-08-23 23:13:41 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=A+website+for+debloated+open+source+alternatives "HTTP/1.1 429 Too Many Requests"
+2026-08-23 23:13:41 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=Why+Sal+Khan%27t%3A+On+Learning+by+Making+but+Teaching+by+Telling&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-23 23:13:41 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=How+I+Find+Problems+to+Solve+as+a+Staff+Engineer&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-23 23:13:41 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=How+Complex+Systems+Fail+%281998%29&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-23 23:13:41 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=A+website+for+debloated+open+source+alternatives&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-23 23:13:41 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=Fable+and+the+End+of+the+Free+Lunch&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-23 23:13:41 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-23 23:13:41 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 01:43:05 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 01:43:05 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 01:43:05 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 01:43:05 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 01:43:05 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 01:43:05 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 01:43:05 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 01:43:05 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 01:43:06 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 01:43:06 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411643.json "HTTP/1.1 200 OK"
+2026-08-24 01:43:06 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411717.json "HTTP/1.1 200 OK"
+2026-08-24 01:43:06 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49409092.json "HTTP/1.1 200 OK"
+2026-08-24 01:43:06 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49410932.json "HTTP/1.1 200 OK"
+2026-08-24 01:43:06 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49409473.json "HTTP/1.1 200 OK"
+2026-08-24 01:43:07 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=My+agent.md+to+improve+LLM-assisted+code+quality "HTTP/1.1 429 Too Many Requests"
+2026-08-24 01:43:07 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=How+I+find+problems+to+solve+as+a+staff+engineer "HTTP/1.1 429 Too Many Requests"
+2026-08-24 01:43:07 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Google+Workspace+thinks+my+domain+is+an+email+provider "HTTP/1.1 429 Too Many Requests"
+2026-08-24 01:43:07 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=What+Is+a+Harness%3F "HTTP/1.1 429 Too Many Requests"
+2026-08-24 01:43:07 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=My+agent.md+to+improve+LLM-assisted+code+quality&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 01:43:07 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=How+I+find+problems+to+solve+as+a+staff+engineer&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 01:43:07 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=Google+Workspace+thinks+my+domain+is+an+email+provider&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 01:43:08 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=What+Is+a+Harness%3F&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 01:43:08 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 01:43:08 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 01:43:31 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-24 01:43:46 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-24 01:45:38 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 01:45:38 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 01:45:39 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 01:45:39 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 01:45:39 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 01:45:39 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 01:45:39 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 01:45:39 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 01:45:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 01:45:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411643.json "HTTP/1.1 200 OK"
+2026-08-24 01:45:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49409473.json "HTTP/1.1 200 OK"
+2026-08-24 01:45:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49409092.json "HTTP/1.1 200 OK"
+2026-08-24 01:45:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411717.json "HTTP/1.1 200 OK"
+2026-08-24 01:45:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49410932.json "HTTP/1.1 200 OK"
+2026-08-24 01:45:41 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Google+Workspace+thinks+my+domain+is+an+email+provider+%282025%29 "HTTP/1.1 429 Too Many Requests"
+2026-08-24 01:45:41 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=Google+Workspace+thinks+my+domain+is+an+email+provider+%282025%29&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 01:45:41 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 01:45:41 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 01:49:26 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 01:49:26 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 01:49:26 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 01:49:26 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 01:49:26 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 01:49:26 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 01:49:26 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 01:49:27 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 01:49:27 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 01:49:27 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411643.json "HTTP/1.1 200 OK"
+2026-08-24 01:49:28 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49409092.json "HTTP/1.1 200 OK"
+2026-08-24 01:49:28 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411717.json "HTTP/1.1 200 OK"
+2026-08-24 01:49:28 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49409473.json "HTTP/1.1 200 OK"
+2026-08-24 01:49:28 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49410932.json "HTTP/1.1 200 OK"
+2026-08-24 01:49:28 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 01:49:28 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 01:50:06 [INFO] __main__: Сервер остановлен.
+2026-08-24 02:41:49 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-24 02:41:49 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-24 02:41:56 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 02:41:56 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:41:56 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 02:41:56 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 02:42:14 [INFO] __main__: 127.0.0.1 - "GET /contact.html HTTP/1.1" 304 -
+2026-08-24 02:42:14 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:42:16 [INFO] __main__: 127.0.0.1 - "GET /about.html HTTP/1.1" 200 -
+2026-08-24 02:42:16 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:42:17 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 200 -
+2026-08-24 02:42:18 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:42:18 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:42:18 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:42:18 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:42:18 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:42:18 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:42:18 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 02:42:19 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 02:42:19 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 02:42:19 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411102.json "HTTP/1.1 200 OK"
+2026-08-24 02:42:19 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411643.json "HTTP/1.1 200 OK"
+2026-08-24 02:42:19 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411717.json "HTTP/1.1 200 OK"
+2026-08-24 02:42:19 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49410932.json "HTTP/1.1 200 OK"
+2026-08-24 02:42:20 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=My+agent.md+to+improve+LLM-assisted+code+quality "HTTP/1.1 429 Too Many Requests"
+2026-08-24 02:42:20 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Google+Workspace+thinks+my+domain+is+an+email+provider+%282025%29 "HTTP/1.1 429 Too Many Requests"
+2026-08-24 02:42:20 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Anthropic%27s+best+AI+model+struggles+to+attract+users+as+cheaper+tools+thrive "HTTP/1.1 429 Too Many Requests"
+2026-08-24 02:42:20 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=How+I+find+problems+to+solve+as+a+staff+engineer "HTTP/1.1 429 Too Many Requests"
+2026-08-24 02:42:20 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Everything+I+own%2C+owned "HTTP/1.1 429 Too Many Requests"
+2026-08-24 02:42:20 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=My+agent.md+to+improve+LLM-assisted+code+quality&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 02:42:20 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=Google+Workspace+thinks+my+domain+is+an+email+provider+%282025%29&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 02:42:20 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=How+I+find+problems+to+solve+as+a+staff+engineer&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 02:42:20 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=Anthropic%27s+best+AI+model+struggles+to+attract+users+as+cheaper+tools+thrive&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 02:42:20 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=Everything+I+own%2C+owned&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 02:42:20 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 02:42:20 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 02:42:23 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-24 02:42:44 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 200 -
+2026-08-24 02:42:44 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:42:44 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:42:44 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:42:44 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:42:44 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:42:44 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:42:45 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 02:42:45 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 02:42:45 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 02:42:45 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411717.json "HTTP/1.1 200 OK"
+2026-08-24 02:42:45 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411102.json "HTTP/1.1 200 OK"
+2026-08-24 02:42:45 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411643.json "HTTP/1.1 200 OK"
+2026-08-24 02:42:45 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49410932.json "HTTP/1.1 200 OK"
+2026-08-24 02:42:45 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 02:42:45 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 02:43:48 [INFO] __main__: Сервер остановлен.
+2026-08-24 02:48:56 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-24 02:48:56 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-24 02:49:27 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 02:49:27 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:49:27 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 02:49:27 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 02:49:42 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 02:49:42 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 200 -
+2026-08-24 02:49:43 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:49:43 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:49:43 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:49:43 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:49:43 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:49:43 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:49:43 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 02:49:44 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 02:49:44 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 02:49:44 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411643.json "HTTP/1.1 200 OK"
+2026-08-24 02:49:44 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49410932.json "HTTP/1.1 200 OK"
+2026-08-24 02:49:44 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411717.json "HTTP/1.1 200 OK"
+2026-08-24 02:49:44 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411102.json "HTTP/1.1 200 OK"
+2026-08-24 02:49:45 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=How+I+find+problems+to+solve+as+a+staff+engineer "HTTP/1.1 429 Too Many Requests"
+2026-08-24 02:49:45 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Everything+I+own%2C+owned "HTTP/1.1 429 Too Many Requests"
+2026-08-24 02:49:45 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Google+Workspace+thinks+my+domain+is+an+email+provider+%282025%29 "HTTP/1.1 429 Too Many Requests"
+2026-08-24 02:49:45 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Anthropic%27s+best+AI+model+struggles+to+attract+users+as+cheaper+tools+thrive "HTTP/1.1 429 Too Many Requests"
+2026-08-24 02:49:45 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=My+agent.md+to+improve+LLM-assisted+code+quality "HTTP/1.1 429 Too Many Requests"
+2026-08-24 02:49:45 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=Everything+I+own%2C+owned&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 02:49:45 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=How+I+find+problems+to+solve+as+a+staff+engineer&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 02:49:45 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=My+agent.md+to+improve+LLM-assisted+code+quality&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 02:49:45 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=Google+Workspace+thinks+my+domain+is+an+email+provider+%282025%29&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 02:49:45 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=Anthropic%27s+best+AI+model+struggles+to+attract+users+as+cheaper+tools+thrive&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 02:49:45 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 02:49:45 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 02:50:20 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-24 02:50:27 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-24 02:50:34 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 200 -
+2026-08-24 02:50:34 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:50:34 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:50:34 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:50:34 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:50:34 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:50:34 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:50:34 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 02:50:35 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:35 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:35 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411717.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:35 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411102.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:35 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49410932.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:35 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411643.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:35 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 02:50:35 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 02:50:41 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 02:50:41 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:50:41 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 02:50:41 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 02:50:45 [INFO] __main__: 127.0.0.1 - "GET /about.html HTTP/1.1" 200 -
+2026-08-24 02:50:45 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:50:47 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 200 -
+2026-08-24 02:50:47 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:50:47 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:50:47 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:50:47 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:50:47 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:50:47 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:50:48 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 02:50:49 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:49 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:49 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411643.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:49 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49410932.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:49 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411102.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:49 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411717.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:49 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 02:50:49 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 02:50:50 [INFO] __main__: 127.0.0.1 - "GET /contact.html HTTP/1.1" 200 -
+2026-08-24 02:50:50 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:50:53 [INFO] __main__: 127.0.0.1 - "GET /contact.html HTTP/1.1" 200 -
+2026-08-24 02:50:53 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:50:56 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 200 -
+2026-08-24 02:50:56 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:50:56 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:50:56 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:50:56 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:50:56 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:50:56 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:50:57 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 02:50:57 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:57 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:57 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411102.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:57 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411717.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:57 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49410932.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:57 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411643.json "HTTP/1.1 200 OK"
+2026-08-24 02:50:57 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 02:50:57 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 02:51:30 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 02:51:31 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:51:31 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:51:31 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:51:31 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:51:31 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:51:31 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:51:31 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 02:51:33 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 02:51:33 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 02:51:33 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411643.json "HTTP/1.1 200 OK"
+2026-08-24 02:51:33 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49410932.json "HTTP/1.1 200 OK"
+2026-08-24 02:51:33 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411717.json "HTTP/1.1 200 OK"
+2026-08-24 02:51:33 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411102.json "HTTP/1.1 200 OK"
+2026-08-24 02:51:33 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 02:51:33 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 02:54:40 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 02:54:41 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:54:41 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:54:41 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:54:41 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:54:41 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:54:41 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:54:41 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 02:54:42 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 02:54:42 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 02:54:42 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411643.json "HTTP/1.1 200 OK"
+2026-08-24 02:54:42 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49410932.json "HTTP/1.1 200 OK"
+2026-08-24 02:54:42 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411102.json "HTTP/1.1 200 OK"
+2026-08-24 02:54:42 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411717.json "HTTP/1.1 200 OK"
+2026-08-24 02:54:42 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 02:54:42 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 02:54:53 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 02:54:53 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:54:53 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 02:54:53 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 02:55:05 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 200 -
+2026-08-24 02:55:05 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:55:05 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:55:05 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:55:05 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:55:05 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:55:05 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 02:55:05 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 02:55:06 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 02:55:06 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 02:55:06 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411717.json "HTTP/1.1 200 OK"
+2026-08-24 02:55:06 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411643.json "HTTP/1.1 200 OK"
+2026-08-24 02:55:06 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411102.json "HTTP/1.1 200 OK"
+2026-08-24 02:55:06 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49410932.json "HTTP/1.1 200 OK"
+2026-08-24 02:55:06 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 02:55:06 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 02:55:07 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 02:55:07 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 02:55:07 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 02:55:07 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 02:55:34 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 401 -
+2026-08-24 02:58:27 [INFO] __main__: Сервер остановлен.
+2026-08-24 03:02:23 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-24 03:02:23 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-24 03:02:35 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 03:02:35 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 403 -
+2026-08-24 03:02:46 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 03:02:46 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 403 -
+2026-08-24 03:03:37 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 03:03:37 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 403 -
+2026-08-24 03:03:37 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 03:03:37 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 403 -
+2026-08-24 03:03:37 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 03:03:37 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 403 -
+2026-08-24 03:03:47 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 03:03:47 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 403 -
+2026-08-24 03:03:48 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 03:03:48 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 403 -
+2026-08-24 03:03:48 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 03:03:48 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 403 -
+2026-08-24 03:03:50 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 03:03:50 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 403 -
+2026-08-24 03:04:19 [INFO] __main__: 127.0.0.1 - "OPTIONS /api/login HTTP/1.1" 204 -
+2026-08-24 03:04:19 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 03:04:19 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 03:04:19 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 403 -
+2026-08-24 03:04:19 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 03:04:19 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 403 -
+2026-08-24 03:04:19 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 03:04:19 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 403 -
+2026-08-24 03:06:41 [INFO] __main__: 127.0.0.1 - "OPTIONS /api/login HTTP/1.1" 204 -
+2026-08-24 03:06:41 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 401 -
+2026-08-24 03:06:53 [INFO] __main__: 127.0.0.1 - "OPTIONS /api/login HTTP/1.1" 204 -
+2026-08-24 03:06:53 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 03:06:53 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 03:06:53 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 403 -
+2026-08-24 03:06:54 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 03:06:54 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 403 -
+2026-08-24 03:06:54 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 03:06:54 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 403 -
+2026-08-24 03:10:04 [INFO] __main__: Сервер остановлен.
+2026-08-24 03:13:51 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-24 03:13:51 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-24 03:14:01 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 302 -
+2026-08-24 03:14:01 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 03:14:02 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 03:14:02 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 03:14:02 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 03:14:23 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 401 -
+2026-08-24 03:14:28 [INFO] __main__: 127.0.0.1 - "GET /about.html HTTP/1.1" 302 -
+2026-08-24 03:14:28 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 03:14:29 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 03:14:29 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 03:14:29 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 03:14:31 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 302 -
+2026-08-24 03:14:31 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 03:14:32 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 03:14:32 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 03:14:32 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 03:15:10 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 03:15:10 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 03:15:10 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 03:15:10 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 03:15:10 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 03:15:10 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 03:15:10 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 03:15:10 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 03:15:11 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 03:15:11 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 03:15:11 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 03:15:12 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411717.json "HTTP/1.1 200 OK"
+2026-08-24 03:15:12 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411102.json "HTTP/1.1 200 OK"
+2026-08-24 03:15:12 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411643.json "HTTP/1.1 200 OK"
+2026-08-24 03:15:12 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49405657.json "HTTP/1.1 200 OK"
+2026-08-24 03:15:12 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=How+I+find+problems+to+solve+as+a+staff+engineer "HTTP/1.1 429 Too Many Requests"
+2026-08-24 03:15:12 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Everything+I+own%2C+owned "HTTP/1.1 429 Too Many Requests"
+2026-08-24 03:15:12 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=AI+Chip+Architectures "HTTP/1.1 429 Too Many Requests"
+2026-08-24 03:15:12 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Google+Workspace+thinks+my+domain+is+an+email+provider+%282025%29 "HTTP/1.1 429 Too Many Requests"
+2026-08-24 03:15:12 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Anthropic%27s+best+AI+model+struggles+to+attract+users+as+cheaper+tools+thrive "HTTP/1.1 429 Too Many Requests"
+2026-08-24 03:15:13 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=AI+Chip+Architectures&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 03:15:13 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=Everything+I+own%2C+owned&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 03:15:13 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=How+I+find+problems+to+solve+as+a+staff+engineer&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 03:15:13 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=Google+Workspace+thinks+my+domain+is+an+email+provider+%282025%29&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 03:15:13 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=Anthropic%27s+best+AI+model+struggles+to+attract+users+as+cheaper+tools+thrive&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 03:15:13 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 03:15:13 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 03:15:37 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-24 03:15:48 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-24 03:16:01 [INFO] __main__: 127.0.0.1 - "GET /about.html HTTP/1.1" 200 -
+2026-08-24 03:16:01 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 03:16:03 [INFO] __main__: 127.0.0.1 - "GET /contact.html HTTP/1.1" 200 -
+2026-08-24 03:16:03 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 03:16:06 [INFO] __main__: 127.0.0.1 - "GET /contact.html HTTP/1.1" 200 -
+2026-08-24 03:16:06 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 03:16:08 [INFO] __main__: 127.0.0.1 - "GET /contact.html HTTP/1.1" 200 -
+2026-08-24 03:16:08 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 03:16:10 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 200 -
+2026-08-24 03:16:10 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 03:16:10 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 03:16:10 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 03:16:10 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 03:16:10 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 03:16:10 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 03:16:11 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 03:16:11 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 03:16:11 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 03:16:12 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411643.json "HTTP/1.1 200 OK"
+2026-08-24 03:16:12 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411102.json "HTTP/1.1 200 OK"
+2026-08-24 03:16:12 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49405657.json "HTTP/1.1 200 OK"
+2026-08-24 03:16:12 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411717.json "HTTP/1.1 200 OK"
+2026-08-24 03:16:12 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 03:16:12 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 03:16:13 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 200 -
+2026-08-24 03:16:13 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 03:16:13 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 03:16:13 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 03:16:13 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 03:16:13 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 03:16:13 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 03:16:14 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 03:16:14 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 03:16:14 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 03:16:14 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49405657.json "HTTP/1.1 200 OK"
+2026-08-24 03:16:14 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411102.json "HTTP/1.1 200 OK"
+2026-08-24 03:16:14 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411717.json "HTTP/1.1 200 OK"
+2026-08-24 03:16:14 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49411643.json "HTTP/1.1 200 OK"
+2026-08-24 03:16:14 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 03:16:14 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 03:20:15 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 302 -
+2026-08-24 03:20:15 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 03:20:15 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 03:20:15 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 03:20:15 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 03:20:22 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 302 -
+2026-08-24 03:20:22 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 03:20:22 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 03:20:22 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 03:20:22 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 03:20:24 [INFO] __main__: 127.0.0.1 - "GET /about.html HTTP/1.1" 302 -
+2026-08-24 03:20:24 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 03:20:24 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 03:20:24 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 03:20:24 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 03:20:25 [INFO] __main__: 127.0.0.1 - "GET /contact.html HTTP/1.1" 302 -
+2026-08-24 03:20:26 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 03:20:26 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 03:20:26 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 03:20:26 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 03:20:32 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 401 -
+2026-08-24 03:20:46 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 03:20:46 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 03:20:46 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 03:20:46 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 03:21:01 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 401 -
+2026-08-24 03:21:14 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 401 -
+2026-08-24 03:21:16 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 03:21:16 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 03:21:16 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 03:21:17 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 03:29:24 [INFO] __main__: Сервер остановлен.
+2026-08-24 15:05:43 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-24 15:05:43 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-24 15:05:52 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 15:05:52 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:05:52 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:05:52 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:05:52 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:05:52 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:05:52 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:05:52 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:05:53 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:05:53 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:05:54 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:05:54 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49416953.json "HTTP/1.1 200 OK"
+2026-08-24 15:05:54 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 15:05:54 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418032.json "HTTP/1.1 200 OK"
+2026-08-24 15:05:54 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:05:55 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Omacom+Foundation+funding+hits+%2410M "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:05:55 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=The+Future+Belongs+to+the+Weird "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:05:55 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=I+were+17%2C+I%27d+learn+how+to+build+LLMs+from+scratch "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:05:55 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=FDA+clears+blood+test+to+aid+evaluation+for+Alzheimer%27s+disease "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:05:55 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Everything+I+own%2C+owned "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:05:56 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=Everything+I+own%2C+owned&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 15:05:56 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=Omacom+Foundation+funding+hits+%2410M&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 15:05:56 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=The+Future+Belongs+to+the+Weird&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 15:06:05 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:06:05 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:06:43 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-24 15:07:01 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-24 15:07:04 [INFO] __main__: 127.0.0.1 - "GET /about.html HTTP/1.1" 200 -
+2026-08-24 15:07:04 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:07:05 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:07:05 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js HTTP/1.1" 200 -
+2026-08-24 15:07:06 [INFO] __main__: 127.0.0.1 - "GET /contact.html HTTP/1.1" 200 -
+2026-08-24 15:07:08 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:07:08 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:07:08 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js HTTP/1.1" 200 -
+2026-08-24 15:07:13 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 15:07:13 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 15:07:13 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:07:13 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:07:14 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:07:15 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 302 -
+2026-08-24 15:07:15 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 15:07:15 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:07:16 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:07:16 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:07:17 [INFO] __main__: 127.0.0.1 - "GET /about.html HTTP/1.1" 302 -
+2026-08-24 15:07:17 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 15:07:17 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:07:17 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:07:17 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:07:19 [INFO] __main__: 127.0.0.1 - "GET /contact.html HTTP/1.1" 302 -
+2026-08-24 15:07:19 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 15:07:19 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:07:19 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:07:19 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:07:26 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 15:07:26 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 15:07:26 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:07:26 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:07:27 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:07:27 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:07:27 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:07:27 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:07:27 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:07:27 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:07:28 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:07:28 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:07:28 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418032.json "HTTP/1.1 200 OK"
+2026-08-24 15:07:28 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 15:07:28 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:07:28 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49416953.json "HTTP/1.1 200 OK"
+2026-08-24 15:07:28 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:07:28 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:07:40 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 302 -
+2026-08-24 15:07:40 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 15:07:40 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:07:40 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:07:40 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:07:40 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 15:07:40 [INFO] __main__: 127.0.0.1 - "GET /favicon.ico HTTP/1.1" 403 -
+2026-08-24 15:07:43 [INFO] __main__: 127.0.0.1 - "GET /contact.html HTTP/1.1" 302 -
+2026-08-24 15:07:43 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 15:07:43 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:07:43 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:07:43 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:07:43 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 15:07:43 [INFO] __main__: 127.0.0.1 - "GET /favicon.ico HTTP/1.1" 403 -
+2026-08-24 15:07:45 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 302 -
+2026-08-24 15:07:45 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 15:07:45 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:07:45 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:07:45 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:07:45 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 15:07:45 [INFO] __main__: 127.0.0.1 - "GET /favicon.ico HTTP/1.1" 403 -
+2026-08-24 15:07:48 [INFO] __main__: 127.0.0.1 - "GET /contact.html HTTP/1.1" 302 -
+2026-08-24 15:07:48 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 15:07:48 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:07:48 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:07:48 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:07:48 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 15:07:48 [INFO] __main__: 127.0.0.1 - "GET /favicon.ico HTTP/1.1" 403 -
+2026-08-24 15:07:49 [INFO] __main__: 127.0.0.1 - "GET /about.html HTTP/1.1" 302 -
+2026-08-24 15:07:49 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 15:07:50 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:07:50 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:07:50 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:07:50 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 15:07:50 [INFO] __main__: 127.0.0.1 - "GET /favicon.ico HTTP/1.1" 403 -
+2026-08-24 15:07:51 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 302 -
+2026-08-24 15:07:51 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 15:07:51 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:07:51 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:07:51 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:07:51 [INFO] __main__: 127.0.0.1 - code 403, message Forbidden
+2026-08-24 15:07:51 [INFO] __main__: 127.0.0.1 - "GET /favicon.ico HTTP/1.1" 403 -
+2026-08-24 15:08:02 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 401 -
+2026-08-24 15:08:03 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 401 -
+2026-08-24 15:08:13 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 401 -
+2026-08-24 15:08:26 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 15:08:27 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 15:08:27 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:08:27 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:08:27 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:08:27 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:08:27 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:08:27 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:08:27 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:08:28 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:08:28 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:08:28 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:08:29 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418032.json "HTTP/1.1 200 OK"
+2026-08-24 15:08:29 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:08:29 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 15:08:29 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 15:08:29 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Omakase+Computing "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:08:30 [INFO] httpx: HTTP Request: GET https://api.mymemory.translated.net/get?q=Omakase+Computing&langpair=en%7Cru "HTTP/1.1 200 OK"
+2026-08-24 15:08:30 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:08:30 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:08:30 [INFO] __main__: 127.0.0.1 - code 404, message File not found
+2026-08-24 15:08:30 [INFO] __main__: 127.0.0.1 - "GET /favicon.ico HTTP/1.1" 404 -
+2026-08-24 15:09:14 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 15:09:14 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 15:09:14 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:09:15 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:09:15 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:10:17 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 15:10:17 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 15:10:18 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:10:18 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:10:18 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:10:20 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 15:10:20 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 15:10:20 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:10:20 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:10:20 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:10:20 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:10:20 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:10:20 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:10:20 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:10:21 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:10:22 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:10:22 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:10:22 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:10:22 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 15:10:22 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 15:10:22 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418032.json "HTTP/1.1 200 OK"
+2026-08-24 15:10:22 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:10:22 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:10:45 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 15:10:46 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 15:10:46 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:10:46 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:10:46 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:10:48 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 15:10:52 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 15:10:52 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 15:10:52 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 15:10:52 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:10:52 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:10:52 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:10:52 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:10:52 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:10:52 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:10:52 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:10:53 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:10:53 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:10:53 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418032.json "HTTP/1.1 200 OK"
+2026-08-24 15:10:53 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 15:10:53 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:10:53 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 15:10:53 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:10:53 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:10:53 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:11:00 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-24 15:17:14 [INFO] __main__: Сервер остановлен.
+2026-08-24 15:17:33 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-24 15:17:33 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-24 15:17:43 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 15:17:43 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:17:43 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:17:43 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:17:43 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:17:43 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:17:43 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:17:43 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:17:44 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:17:45 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:17:45 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:17:45 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 15:17:45 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 15:17:45 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:17:45 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418032.json "HTTP/1.1 200 OK"
+2026-08-24 15:17:46 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=I+were+17%2C+I%27d+learn+how+to+build+LLMs+from+scratch "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:17:46 [INFO] httpx: HTTP Request: GET https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=ru&q=I+were+17%2C+I%27d+learn+how+to+build+LLMs+from+scratch "HTTP/1.1 200 OK"
+2026-08-24 15:17:47 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=Everything+I+own%2C+owned "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:17:47 [INFO] httpx: HTTP Request: GET https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=ru&q=Everything+I+own%2C+owned "HTTP/1.1 200 OK"
+2026-08-24 15:17:48 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=SeL4+security+proofs+now+complete+on+AArch64 "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:17:48 [INFO] httpx: HTTP Request: GET https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=ru&q=SeL4+security+proofs+now+complete+on+AArch64 "HTTP/1.1 200 OK"
+2026-08-24 15:17:49 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=Omacom+Foundation+funding+hits+%2410M "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:17:49 [INFO] httpx: HTTP Request: GET https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=ru&q=Omacom+Foundation+funding+hits+%2410M "HTTP/1.1 200 OK"
+2026-08-24 15:17:50 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=Omakase+Computing "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:17:50 [INFO] httpx: HTTP Request: GET https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=ru&q=Omakase+Computing "HTTP/1.1 200 OK"
+2026-08-24 15:17:51 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:17:51 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:18:08 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 15:18:09 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 15:18:09 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:18:09 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:18:09 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:18:11 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 15:18:11 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 15:18:11 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:18:11 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:18:12 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:18:12 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:18:12 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:18:12 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:18:12 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:18:12 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:18:12 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:18:13 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:18:13 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:18:13 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418032.json "HTTP/1.1 200 OK"
+2026-08-24 15:18:13 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 15:18:13 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 15:18:15 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:18:15 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:18:28 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 302 -
+2026-08-24 15:18:28 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 15:18:28 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:18:28 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:18:28 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:18:31 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 15:18:31 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 15:18:31 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:18:31 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:18:31 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:18:31 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:18:31 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:18:31 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:18:31 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:18:32 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:18:32 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:18:32 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:18:33 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418032.json "HTTP/1.1 200 OK"
+2026-08-24 15:18:33 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:18:33 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 15:18:33 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 15:18:34 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:18:34 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:19:02 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-24 15:19:05 [INFO] __main__: 127.0.0.1 - "GET /contact.html HTTP/1.1" 200 -
+2026-08-24 15:19:05 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:19:05 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:19:05 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js HTTP/1.1" 200 -
+2026-08-24 15:19:07 [INFO] __main__: 127.0.0.1 - "GET /about.html HTTP/1.1" 200 -
+2026-08-24 15:19:07 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:19:07 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:19:08 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js HTTP/1.1" 200 -
+2026-08-24 15:19:09 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 15:19:09 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 15:19:09 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:19:10 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:19:10 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:19:12 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 15:19:12 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 15:19:12 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:19:13 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:19:13 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:19:13 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:19:13 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:19:13 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:19:13 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:19:13 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:19:14 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:19:14 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:19:14 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 15:19:14 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 15:19:14 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:19:14 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418032.json "HTTP/1.1 200 OK"
+2026-08-24 15:19:16 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:19:16 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:19:21 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-24 15:20:07 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 15:20:07 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-24 15:20:07 [INFO] __main__: 127.0.0.1 - "GET /contact.html HTTP/1.1" 200 -
+2026-08-24 15:20:07 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 15:20:07 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 15:20:07 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:20:07 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 15:20:07 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:20:08 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:20:08 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:20:08 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:20:08 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:20:08 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:20:08 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:20:08 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:20:08 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:20:08 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:20:09 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:20:09 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:20:09 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 15:20:09 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 15:20:09 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:20:09 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418032.json "HTTP/1.1 200 OK"
+2026-08-24 15:20:11 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:20:11 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:20:16 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-24 15:20:35 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 15:20:35 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 15:20:36 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:20:36 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:20:36 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:21:04 [INFO] __main__: Сервер остановлен.
+2026-08-24 15:43:36 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-24 15:43:36 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-24 15:44:01 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 302 -
+2026-08-24 15:44:01 [INFO] __main__: 127.0.0.1 - "GET /login HTTP/1.1" 200 -
+2026-08-24 15:44:01 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:44:01 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:44:01 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:44:40 [INFO] __main__: 127.0.0.1 - "POST /api/register HTTP/1.1" 201 -
+2026-08-24 15:44:40 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 15:44:40 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:44:40 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:44:40 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:44:40 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:44:40 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:44:40 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:44:41 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:44:41 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:44:42 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:44:42 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 15:44:42 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:44:42 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:44:42 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 15:44:42 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 15:44:43 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=SeL4+security+proofs+now+complete+on+AArch64 "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:44:43 [INFO] httpx: HTTP Request: GET https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=ru&q=SeL4+security+proofs+now+complete+on+AArch64 "HTTP/1.1 200 OK"
+2026-08-24 15:44:44 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=I+were+17%2C+I%27d+learn+how+to+build+LLMs+from+scratch "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:44:44 [INFO] httpx: HTTP Request: GET https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=ru&q=I+were+17%2C+I%27d+learn+how+to+build+LLMs+from+scratch "HTTP/1.1 200 OK"
+2026-08-24 15:44:45 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=Everything+I+own%2C+owned "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:44:45 [INFO] httpx: HTTP Request: GET https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=ru&q=Everything+I+own%2C+owned "HTTP/1.1 200 OK"
+2026-08-24 15:44:46 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=Omakase+Computing "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:44:46 [INFO] httpx: HTTP Request: GET https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=ru&q=Omakase+Computing "HTTP/1.1 200 OK"
+2026-08-24 15:44:47 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=FDA+clears+blood+test+to+aid+evaluation+for+Alzheimer%27s+disease "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:44:47 [INFO] httpx: HTTP Request: GET https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=ru&q=FDA+clears+blood+test+to+aid+evaluation+for+Alzheimer%27s+disease "HTTP/1.1 200 OK"
+2026-08-24 15:44:47 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:44:47 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:45:15 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-24 15:45:20 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 15:45:20 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 15:45:21 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:45:21 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:45:21 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:45:53 [INFO] __main__: 127.0.0.1 - "POST /api/register HTTP/1.1" 201 -
+2026-08-24 15:45:53 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 15:45:53 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:45:53 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:45:53 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:45:53 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:45:53 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:45:53 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:45:53 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:45:54 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:45:54 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:45:55 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 15:45:55 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:45:55 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:45:55 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 15:45:55 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 15:45:57 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:45:57 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:46:13 [INFO] __main__: 127.0.0.1 - "GET /contact.html HTTP/1.1" 200 -
+2026-08-24 15:46:13 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:46:13 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:46:13 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js HTTP/1.1" 200 -
+2026-08-24 15:46:14 [INFO] __main__: 127.0.0.1 - "GET /about.html HTTP/1.1" 200 -
+2026-08-24 15:46:14 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:46:14 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:46:14 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js HTTP/1.1" 200 -
+2026-08-24 15:46:15 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 200 -
+2026-08-24 15:46:15 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:46:15 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:46:16 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:46:16 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:46:16 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:46:16 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:46:16 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:46:16 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:46:16 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:46:16 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 15:46:17 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:46:17 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 15:46:17 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:46:17 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 15:46:19 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:46:19 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:46:19 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 15:46:19 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 15:46:19 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:46:19 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:46:19 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:46:49 [INFO] __main__: 127.0.0.1 - "POST /api/register HTTP/1.1" 409 -
+2026-08-24 15:47:03 [INFO] __main__: 127.0.0.1 - "POST /api/register HTTP/1.1" 201 -
+2026-08-24 15:47:03 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 15:47:03 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:47:04 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:47:04 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:47:04 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:47:04 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:47:04 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:47:04 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:47:04 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:47:05 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:47:05 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 15:47:05 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:47:05 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 15:47:05 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 15:47:05 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:47:07 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:47:07 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:47:22 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 15:47:22 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 15:47:22 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:47:22 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:47:22 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:47:40 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 401 -
+2026-08-24 15:47:44 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 15:47:44 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 15:47:44 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:47:45 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:47:45 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:47:45 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:47:45 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:47:45 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:47:45 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:47:45 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:47:46 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:47:46 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 15:47:46 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 15:47:46 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 15:47:46 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:47:46 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:47:48 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:47:48 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:48:30 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-24 15:48:36 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-24 15:48:39 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-24 15:49:17 [INFO] __main__: 127.0.0.1 - "POST /api/messages HTTP/1.1" 201 -
+2026-08-24 15:49:30 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-24 15:49:51 [INFO] __main__: 127.0.0.1 - "GET /about.html HTTP/1.1" 200 -
+2026-08-24 15:49:51 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:49:51 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:49:51 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js HTTP/1.1" 200 -
+2026-08-24 15:49:52 [INFO] __main__: 127.0.0.1 - "GET /contact.html HTTP/1.1" 200 -
+2026-08-24 15:49:53 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:49:53 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:49:53 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js HTTP/1.1" 200 -
+2026-08-24 15:49:54 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 200 -
+2026-08-24 15:49:54 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:49:54 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:49:54 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:49:54 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:49:54 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:49:54 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:49:54 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:49:55 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:49:55 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:49:55 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 15:49:56 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:49:56 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:49:56 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 15:49:56 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 15:49:57 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:49:57 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:52:08 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 15:52:08 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 15:52:08 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:52:08 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:52:08 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:55:50 [INFO] __main__: Сервер остановлен.
+2026-08-24 15:56:07 [INFO] __main__: Сервер запущен: http://localhost:8080/
+2026-08-24 15:56:07 [INFO] __main__: Нажмите Ctrl+C для остановки.
+2026-08-24 15:56:12 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 15:56:12 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:56:13 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:56:13 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:56:18 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 401 -
+2026-08-24 15:56:28 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 15:56:29 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 15:56:29 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:56:29 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:56:29 [INFO] __main__: 127.0.0.1 - "GET /js/session.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:56:29 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:56:29 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:56:29 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:56:29 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:56:29 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:56:30 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:56:31 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:56:31 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 15:56:31 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49416953.json "HTTP/1.1 200 OK"
+2026-08-24 15:56:31 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 15:56:31 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:56:31 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:56:32 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=SeL4+security+proofs+now+complete+on+AArch64 "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:56:32 [INFO] httpx: HTTP Request: GET https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=ru&q=SeL4+security+proofs+now+complete+on+AArch64 "HTTP/1.1 200 OK"
+2026-08-24 15:56:33 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=Omakase+Computing "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:56:33 [INFO] httpx: HTTP Request: GET https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=ru&q=Omakase+Computing "HTTP/1.1 200 OK"
+2026-08-24 15:56:34 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=I+were+17%2C+I%27d+learn+how+to+build+LLMs+from+scratch "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:56:34 [INFO] httpx: HTTP Request: GET https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=ru&q=I+were+17%2C+I%27d+learn+how+to+build+LLMs+from+scratch "HTTP/1.1 200 OK"
+2026-08-24 15:56:35 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=Everything+I+own%2C+owned "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:56:35 [INFO] httpx: HTTP Request: GET https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=ru&q=Everything+I+own%2C+owned "HTTP/1.1 200 OK"
+2026-08-24 15:56:36 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=The+Future+Belongs+to+the+Weird "HTTP/1.1 429 Too Many Requests"
+2026-08-24 15:56:36 [INFO] httpx: HTTP Request: GET https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=ru&q=The+Future+Belongs+to+the+Weird "HTTP/1.1 200 OK"
+2026-08-24 15:56:37 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:56:37 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:56:37 [INFO] __main__: 127.0.0.1 - "GET /api/me HTTP/1.1" 200 -
+2026-08-24 15:58:07 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 15:58:07 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 15:58:07 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:58:08 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 15:58:08 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 15:58:12 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 401 -
+2026-08-24 15:58:19 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 15:58:19 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 15:58:19 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 15:58:19 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:58:19 [INFO] __main__: 127.0.0.1 - "GET /js/session.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:58:19 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:58:19 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:58:19 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:58:19 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:58:19 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 15:58:20 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 15:58:20 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 15:58:21 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 15:58:21 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 15:58:21 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 15:58:21 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49416953.json "HTTP/1.1 200 OK"
+2026-08-24 15:58:21 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 15:58:23 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 15:58:23 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 15:58:23 [INFO] __main__: 127.0.0.1 - "GET /api/me HTTP/1.1" 200 -
+2026-08-24 16:00:16 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-24 16:00:50 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 16:00:50 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:00:50 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:00:50 [INFO] __main__: 127.0.0.1 - "GET /js/session.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:00:50 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:00:50 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:00:50 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:00:51 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:00:51 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:00:51 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 16:00:52 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 16:00:52 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 16:00:52 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 16:00:52 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 16:00:52 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 16:00:53 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 16:00:55 [INFO] httpx: HTTP Request: GET https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=FDA+clears+blood+test+to+aid+evaluation+for+Alzheimer%27s+disease "HTTP/1.1 429 Too Many Requests"
+2026-08-24 16:00:55 [INFO] httpx: HTTP Request: GET https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=ru&q=FDA+clears+blood+test+to+aid+evaluation+for+Alzheimer%27s+disease "HTTP/1.1 200 OK"
+2026-08-24 16:00:56 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 16:00:56 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 16:00:56 [INFO] __main__: 127.0.0.1 - "GET /api/me HTTP/1.1" 200 -
+2026-08-24 16:00:56 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 16:00:56 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 16:00:56 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:00:56 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 16:00:56 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 16:00:58 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 16:00:59 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 16:00:59 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:00:59 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:00:59 [INFO] __main__: 127.0.0.1 - "GET /js/session.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:00:59 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:00:59 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:00:59 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:00:59 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:00:59 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:00:59 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 16:01:00 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:00 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:00 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:00 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:00 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:00 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:02 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 16:01:02 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 16:01:02 [INFO] __main__: 127.0.0.1 - "GET /api/me HTTP/1.1" 200 -
+2026-08-24 16:01:02 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-24 16:01:10 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 16:01:10 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 16:01:10 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:01:10 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 16:01:10 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 16:01:16 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 16:01:16 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 16:01:16 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:01:16 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:01:16 [INFO] __main__: 127.0.0.1 - "GET /js/session.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:01:16 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:01:16 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:01:16 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:01:16 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:01:17 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:01:17 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 16:01:17 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:18 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:18 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:18 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:18 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:18 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:20 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 16:01:20 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 16:01:20 [INFO] __main__: 127.0.0.1 - "GET /api/me HTTP/1.1" 200 -
+2026-08-24 16:01:20 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-24 16:01:52 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 16:01:53 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 16:01:53 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:01:53 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 16:01:53 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 16:01:55 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 16:01:55 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 16:01:55 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:01:55 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:01:56 [INFO] __main__: 127.0.0.1 - "GET /js/session.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:01:56 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:01:56 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:01:56 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:01:56 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:01:56 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:01:56 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 16:01:56 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:57 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:57 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:57 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:57 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:57 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 16:01:59 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 16:01:59 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 16:01:59 [INFO] __main__: 127.0.0.1 - "GET /api/me HTTP/1.1" 200 -
+2026-08-24 16:02:14 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 16:02:14 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 16:02:14 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:02:14 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 16:02:14 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 16:02:18 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 16:02:18 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 16:02:18 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:02:18 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:02:18 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:02:18 [INFO] __main__: 127.0.0.1 - "GET /js/session.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:02:18 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:02:18 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:02:18 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:02:19 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:02:19 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 16:02:19 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 16:02:19 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 16:02:19 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 16:02:19 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 16:02:19 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 16:02:19 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418117.json "HTTP/1.1 200 OK"
+2026-08-24 16:02:21 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 16:02:21 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 16:02:21 [INFO] __main__: 127.0.0.1 - "GET /api/me HTTP/1.1" 200 -
+2026-08-24 16:05:11 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 16:05:12 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 16:05:12 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:05:12 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 16:05:12 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 16:05:15 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 16:05:15 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:05:15 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 16:05:15 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 16:05:18 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 16:05:18 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 16:05:18 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:05:18 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:18 [INFO] __main__: 127.0.0.1 - "GET /js/session.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:18 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:18 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:18 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:18 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:19 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:19 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 16:05:20 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:20 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:20 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49416953.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:20 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:20 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:20 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:22 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 16:05:22 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 16:05:22 [INFO] __main__: 127.0.0.1 - "GET /api/me HTTP/1.1" 200 -
+2026-08-24 16:05:22 [INFO] __main__: 127.0.0.1 - "GET /api/me HTTP/1.1" 200 -
+2026-08-24 16:05:30 [INFO] __main__: 127.0.0.1 - "GET /api/hackers HTTP/1.1" 200 -
+2026-08-24 16:05:35 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 16:05:35 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 16:05:35 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:05:35 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 16:05:35 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 16:05:39 [INFO] __main__: 127.0.0.1 - "POST /api/login HTTP/1.1" 200 -
+2026-08-24 16:05:39 [INFO] __main__: 127.0.0.1 - "GET / HTTP/1.1" 200 -
+2026-08-24 16:05:39 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:05:39 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:39 [INFO] __main__: 127.0.0.1 - "GET /js/session.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:39 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:39 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:39 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:39 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:39 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:39 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 16:05:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:40 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49416953.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:42 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 16:05:42 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 16:05:42 [INFO] __main__: 127.0.0.1 - "GET /api/me HTTP/1.1" 200 -
+2026-08-24 16:05:43 [INFO] __main__: 127.0.0.1 - "GET /api/me HTTP/1.1" 200 -
+2026-08-24 16:05:50 [INFO] __main__: 127.0.0.1 - "GET /contact.html HTTP/1.1" 200 -
+2026-08-24 16:05:50 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:05:50 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 16:05:50 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js HTTP/1.1" 200 -
+2026-08-24 16:05:52 [INFO] __main__: 127.0.0.1 - "GET /about.html HTTP/1.1" 200 -
+2026-08-24 16:05:52 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:05:52 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 16:05:52 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js HTTP/1.1" 200 -
+2026-08-24 16:05:54 [INFO] __main__: 127.0.0.1 - "GET /index.html HTTP/1.1" 200 -
+2026-08-24 16:05:54 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:05:54 [INFO] __main__: 127.0.0.1 - "GET /js/api.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:54 [INFO] __main__: 127.0.0.1 - "GET /js/session.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:54 [INFO] __main__: 127.0.0.1 - "GET /js/logout.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:54 [INFO] __main__: 127.0.0.1 - "GET /js/weather.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:54 [INFO] __main__: 127.0.0.1 - "GET /js/aliases.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:54 [INFO] __main__: 127.0.0.1 - "GET /js/news.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:54 [INFO] __main__: 127.0.0.1 - "GET /js/chat.js?v=widgets HTTP/1.1" 200 -
+2026-08-24 16:05:55 [INFO] __main__: 127.0.0.1 - "GET /api/weather HTTP/1.1" 200 -
+2026-08-24 16:05:55 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/topstories.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:55 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49418255.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:55 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49412396.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:55 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49415893.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:55 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49416953.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:55 [INFO] httpx: HTTP Request: GET https://hacker-news.firebaseio.com/v0/item/49413320.json "HTTP/1.1 200 OK"
+2026-08-24 16:05:57 [INFO] __main__: 127.0.0.1 - "GET /api/news HTTP/1.1" 200 -
+2026-08-24 16:05:57 [INFO] __main__: 127.0.0.1 - "GET /api/messages HTTP/1.1" 200 -
+2026-08-24 16:05:57 [INFO] __main__: 127.0.0.1 - "GET /api/me HTTP/1.1" 200 -
+2026-08-24 16:05:58 [INFO] __main__: 127.0.0.1 - "GET /api/me HTTP/1.1" 200 -
+2026-08-24 16:06:03 [INFO] __main__: 127.0.0.1 - "POST /api/logout HTTP/1.1" 200 -
+2026-08-24 16:06:03 [INFO] __main__: 127.0.0.1 - "GET /login.html HTTP/1.1" 200 -
+2026-08-24 16:06:03 [INFO] __main__: 127.0.0.1 - "GET /css/style.css HTTP/1.1" 200 -
+2026-08-24 16:07:06 [INFO] __main__: 127.0.0.1 - "GET /js/login.js HTTP/1.1" 200 -
+2026-08-24 16:07:06 [INFO] __main__: 127.0.0.1 - "GET /js/api.js HTTP/1.1" 200 -
+2026-08-24 16:46:29 [INFO] __main__: Сервер остановлен.
