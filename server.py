@@ -38,13 +38,13 @@ from http_utils import (
 )
 from logging_config import setup_logging
 from rate_limit import allow_post
+from server_config import server_host, server_port
 from translate import translate_article_titles
 from users import SITE_USERS
 from weather import current_weather_snapshot
 
 logger = logging.getLogger(__name__)
 
-PORT = 8080
 DIRECTORY = Path(__file__).resolve().parent
 MAX_MESSAGE_LENGTH = 500
 MAX_USERNAME_LENGTH = 64
@@ -315,8 +315,10 @@ class Handler(NoStoreHeadersMixin, SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     setup_logging()
     init_db()
-    server = HTTPServer(("localhost", PORT), Handler)
-    logger.info("Сервер запущен: http://localhost:%s/", PORT)
+    host = server_host()
+    port = server_port()
+    server = HTTPServer((host, port), Handler)
+    logger.info("Сервер запущен: http://%s:%s/", host, port)
     logger.info("Нажмите Ctrl+C для остановки.")
     try:
         server.serve_forever()

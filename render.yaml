@@ -1,0 +1,14 @@
+# Blueprint Render: https://render.com/docs/blueprint-spec
+# PORT задаётся Render автоматически (по умолчанию 10000); server.py читает его из окружения.
+services:
+  - type: web
+    name: neonshadow
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: PYTHONUNBUFFERED
+        value: "1"
