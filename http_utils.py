@@ -1,15 +1,39 @@
 """Общие HTTP-хелперы: JSON, CORS, запрет служебной статики."""
 
 import json
+import os
 from http.server import SimpleHTTPRequestHandler
 from pathlib import Path
 from urllib.parse import unquote
 
-ALLOWED_ORIGINS = frozenset({
+from server_config import DEFAULT_PORT, server_port
+
+_LOCAL_ORIGINS: frozenset[str] = frozenset({
     "http://localhost:8080",
     "http://127.0.0.1:8080",
     "null",
 })
+
+
+def allowed_origins() -> frozenset[str]:
+    """Белый список Origin: локальная разработка, Render и CORS_ORIGINS."""
+    origins: set[str] = set(_LOCAL_ORIGINS)
+    try:
+        port = server_port()
+    except ValueError:
+        port = DEFAULT_PORT
+    if port != 8080:
+        origins.add(f"http://localhost:{port}")
+        origins.add(f"http://127.0.0.1:{port}")
+    external_url = os.environ.get("RENDER_EXTERNAL_URL", "").strip().rstrip("/")
+    if external_url:
+        origins.add(external_url)
+    extra = os.environ.get("CORS_ORIGINS", "")
+    for item in extra.split(","):
+        origin = item.strip().rstrip("/")
+        if origin:
+            origins.add(origin)
+    return frozenset(origins)
 MAX_BODY_BYTES = 4096
 FORBIDDEN_STATIC_SUFFIXES: tuple[str, ...] = (".db", ".sqlite", ".sqlite3")
 
@@ -25,7 +49,7 @@ class NoStoreHeadersMixin:
 def allowed_origin(handler: SimpleHTTPRequestHandler) -> str | None:
     """Возвращает Origin, если он в белом списке."""
     origin = handler.headers.get("Origin")
-    if origin is not None and origin in ALLOWED_ORIGINS:
+    if origin is not None and origin in allowed_origins():
         return origin
     return None
 
