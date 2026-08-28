@@ -9,7 +9,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-home">
   <div class="cyber-grid" aria-hidden="true"></div>
   <div class="matrix-rain" aria-hidden="true"></div>
   <header class="site-header">
@@ -66,6 +66,26 @@
       <div class="news-feed__list" id="newsList"></div>
     </section>
   </main>
+  <footer class="site-footer">
+    <p class="site-footer__copy">© 2026 Vibe Coder</p>
+  </footer>
+  <button
+    type="button"
+    class="scroll-top scroll-top--hidden"
+    id="scrollTopBtn"
+    aria-label="Наверх"
+    hidden
+  >
+    <svg class="scroll-top__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M12 19V5M12 5L6 11M12 5L18 11"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </button>
   <div class="chat-widget" id="chatWidget">
     <button type="button" class="chat-toggle" id="chatToggle" aria-label="Открыть чат">
       <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
@@ -103,5 +123,6 @@
   <script src="js/weather.js?v=widgets"></script>
   <script src="js/aliases.js?v=widgets"></script>
   <script src="js/news.js?v=news-cache"></script>
+  <script src="js/scroll-top.js"></script>
 </body>
 </html>

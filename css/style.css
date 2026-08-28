@@ -654,9 +654,17 @@ main {
 /* About & content pages */
 body.page-about,
 body.page-contact,
-body.page-login {
+body.page-login,
+body.page-home {
   display: block;
   padding-top: 3.75rem;
+}
+
+body.page-home main {
+  max-width: var(--card-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1rem;
 }
 
 .page-login__main {
@@ -873,6 +881,7 @@ body.page-login {
 .site-footer {
   position: relative;
   z-index: 3;
+  width: 100%;
   margin-top: 2rem;
   padding: 1.25rem 1.5rem;
   background: rgba(8, 10, 20, 0.9);
@@ -881,6 +890,67 @@ body.page-login {
   text-align: center;
   font-size: 0.85rem;
   font-family: "JetBrains Mono", "Fira Mono", monospace;
+  box-sizing: border-box;
+}
+
+.site-footer__copy {
+  margin: 0;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 5.75rem;
+  right: 1.25rem;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 1px solid rgba(173, 84, 250, 0.45);
+  border-radius: 50%;
+  background: linear-gradient(135deg, #23243d 0%, #18181b 100%);
+  color: var(--neon-purple);
+  cursor: pointer;
+  box-shadow: 0 0 14px rgba(173, 84, 250, 0.35), 0 4px 18px rgba(0, 0, 0, 0.45);
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease,
+    bottom 0.25s ease,
+    top 0.25s ease;
+}
+
+.scroll-top--above-chat {
+  z-index: 55;
+}
+
+.scroll-top__icon {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.scroll-top:hover {
+  color: var(--neon-cyan);
+  border-color: rgba(0, 255, 231, 0.5);
+  box-shadow: 0 0 18px rgba(0, 255, 231, 0.45), 0 4px 20px rgba(173, 84, 250, 0.25);
+  transform: translateY(-2px);
+}
+
+.scroll-top:active {
+  transform: translateY(0) scale(0.96);
+}
+
+.scroll-top--hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.scroll-top[hidden] {
+  display: flex;
 }
 
 .weather-widget {
@@ -1288,6 +1358,13 @@ body.page-login {
   .chat-widget {
     bottom: 0.75rem;
     right: 0.75rem;
+  }
+
+  .scroll-top {
+    bottom: 5.25rem;
+    right: 0.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 
