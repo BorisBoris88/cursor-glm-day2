@@ -16,7 +16,7 @@
 - Запуск локально: `python server.py` → http://localhost:8080/
 - Тесты: `python -m pytest tests/ -q`
 - Зависимости: `pip install -r requirements.txt`
-- Демо-учётка (только для учебных целей): `neo` / `mat123`
+- Первый вход: регистрация на `/login`
 
 ## Источники истины
 

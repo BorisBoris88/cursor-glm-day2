@@ -31,7 +31,7 @@ def test_login_returns_429_after_three_failed_attempts() -> None:
         statuses: list[int] = []
         for attempt in range(1, 5):
             payload = json.dumps(
-                {"username": "neo", "password": f"wrong-{attempt}"}
+                {"username": "tester", "password": f"wrong-{attempt}"}
             ).encode()
             request = urllib.request.Request(
                 f"http://127.0.0.1:{port}/api/login",

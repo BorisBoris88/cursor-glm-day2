@@ -86,9 +86,9 @@ def test_create_user_rejects_duplicate_username(memory_db: None) -> None:
         database.create_user("shadow", "second-pass")
 
 
-def test_demo_user_seeded_after_init(memory_db: None) -> None:
-    """После init_db доступен демо-пользователь neo."""
-    assert database.check_user("neo", "mat123") is True
+def test_init_db_does_not_seed_default_user(memory_db: None) -> None:
+    """После init_db нет встроенного пользователя — только регистрация."""
+    assert database.check_user("neo", "any-password") is False
 
 
 def test_hash_password_uses_unique_salts() -> None:

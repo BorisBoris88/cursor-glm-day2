@@ -10,8 +10,6 @@ DB_PATH: Path = Path(__file__).resolve().parent / "hackathon.db"
 MESSAGES_LIMIT = 200
 CONNECT_TIMEOUT_SEC = 5.0
 PBKDF2_ITERATIONS = 120_000
-DEMO_USERNAME = "neo"
-DEMO_PASSWORD = "mat123"
 
 
 class UserExistsError(Exception):
@@ -74,21 +72,6 @@ def init_db() -> None:
             )
             """
         )
-        _seed_demo_user(connection)
-
-
-def _seed_demo_user(connection: sqlite3.Connection) -> None:
-    """Добавляет демо-пользователя neo, если таблица users пуста."""
-    row = connection.execute("SELECT COUNT(*) AS cnt FROM users").fetchone()
-    if row is None or int(row["cnt"]) > 0:
-        return
-    connection.execute(
-        """
-        INSERT INTO users (username, password_hash)
-        VALUES (?, ?)
-        """,
-        (DEMO_USERNAME, hash_password(DEMO_PASSWORD)),
-    )
 
 
 def create_user(username: str, password: str) -> int:

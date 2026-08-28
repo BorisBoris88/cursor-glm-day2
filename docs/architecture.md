@@ -48,7 +48,7 @@ server.py (Handler)
 
 `server_config.py` читает из окружения:
 
-- `HOST` — по умолчанию `localhost`; в Docker/Render: `0.0.0.0`
+- `HOST` — по умолчанию `0.0.0.0`; локально можно `127.0.0.1`
 - `PORT` — по умолчанию `8080`; на Render обычно `10000`
 
 ## База данных
@@ -58,4 +58,4 @@ server.py (Handler)
 - **users** — `id`, `username`, `password_hash` (PBKDF2-HMAC-SHA256)
 - **messages** — чат: `username`, `text`, `timestamp`
 
-При первом `init_db()` создаётся демо-пользователь `neo`, если таблица `users` пуста.
+Таблица `users` изначально пуста — учётные записи только через регистрацию.
