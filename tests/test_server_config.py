@@ -13,15 +13,16 @@ from server_config import DEFAULT_HOST, DEFAULT_PORT, server_host, server_port  
 
 
 def test_server_host_default(monkeypatch: pytest.MonkeyPatch) -> None:
-    """Без HOST используется localhost."""
+    """Без HOST используется 0.0.0.0."""
     monkeypatch.delenv("HOST", raising=False)
     assert server_host() == DEFAULT_HOST
+    assert server_host() == "0.0.0.0"
 
 
 def test_server_host_from_env(monkeypatch: pytest.MonkeyPatch) -> None:
     """HOST читается из окружения."""
-    monkeypatch.setenv("HOST", "0.0.0.0")
-    assert server_host() == "0.0.0.0"
+    monkeypatch.setenv("HOST", "127.0.0.1")
+    assert server_host() == "127.0.0.1"
 
 
 def test_server_port_default(monkeypatch: pytest.MonkeyPatch) -> None:

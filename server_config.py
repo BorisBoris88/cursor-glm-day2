@@ -2,18 +2,18 @@
 
 import os
 
-DEFAULT_HOST = "localhost"
+DEFAULT_HOST = "0.0.0.0"
 DEFAULT_PORT = 8080
 
 
 def server_host() -> str:
-    """Адрес привязки: localhost для разработки, 0.0.0.0 для контейнера."""
-    return os.environ.get("HOST", DEFAULT_HOST)
+    """Адрес привязки: по умолчанию 0.0.0.0 для доступа извне (Docker, Render)."""
+    return os.getenv("HOST", DEFAULT_HOST)
 
 
 def server_port() -> int:
-    """Порт HTTP-сервера (Render задаёт PORT автоматически)."""
-    raw = os.environ.get("PORT", str(DEFAULT_PORT))
+    """Порт HTTP-сервера (Render и другие PaaS задают PORT автоматически)."""
+    raw = os.getenv("PORT", "8080")
     try:
         port = int(raw)
     except ValueError as exc:
