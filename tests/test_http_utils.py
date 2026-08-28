@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from http_utils import allowed_origins  # noqa: E402
+from http_utils import CONTENT_SECURITY_POLICY, allowed_origins  # noqa: E402
 
 
 def test_allowed_origins_includes_render_url(monkeypatch: pytest.MonkeyPatch) -> None:
@@ -31,3 +31,10 @@ def test_allowed_origins_custom_port(monkeypatch: pytest.MonkeyPatch) -> None:
     origins = allowed_origins()
     assert "http://localhost:10000" in origins
     assert "http://127.0.0.1:10000" in origins
+
+
+def test_csp_blocks_external_scripts() -> None:
+    """CSP запрещает сторонние скрипты вроде Play CDN."""
+    assert "script-src 'self'" in CONTENT_SECURITY_POLICY
+    assert "cdn.jsdelivr.net" not in CONTENT_SECURITY_POLICY
+    assert "img-src 'self' data:" in CONTENT_SECURITY_POLICY

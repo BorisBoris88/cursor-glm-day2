@@ -78,8 +78,10 @@ def is_login_get_path(path: str) -> bool:
 
 
 def is_public_static_path(path: str) -> bool:
-    """CSS и JS доступны без сессии — иначе страницы не загружаются."""
+    """CSS, JS и favicon доступны без сессии."""
     clean = normalize_path(path)
+    if clean in ("/favicon.svg", "/favicon.ico"):
+        return True
     return clean.startswith("/css/") or clean.startswith("/js/")
 
 

@@ -17,6 +17,7 @@ from api_client import (  # noqa: E402
     NewsApiError,
     fetch_top_articles,
     fetch_top_story_ids,
+    is_http_url,
 )
 
 FAKE_STORY_IDS = [101, 202, 303, 404, 505, 606]
@@ -111,3 +112,12 @@ def test_fetch_top_story_ids_http_error() -> None:
 
     with pytest.raises(NewsApiError):
         asyncio.run(_run())
+
+
+def test_is_http_url_rejects_javascript_and_data() -> None:
+    """javascript: и data: не считаются безопасными ссылками."""
+    assert is_http_url("https://example.com/story") is True
+    assert is_http_url("http://example.com") is True
+    assert is_http_url("javascript:alert(1)") is False
+    assert is_http_url("data:text/html,<script>alert(1)</script>") is False
+    assert is_http_url("not-a-url") is False

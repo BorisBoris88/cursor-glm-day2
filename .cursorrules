@@ -3,10 +3,14 @@
 Статический киберпанк-сайт с бэкендом на стандартной библиотеке Python.
 Не добавляй фреймворки (Flask, FastAPI, React, Vue, Tailwind, Sass, TypeScript, bundler).
 
+**Документация:** `docs/README.md` (API, auth, деплой, архитектура), корневой `README.md`.
+
 ## Стек
 
 - **Python 3.14.7** — бэкенд и скрипты.
 - **http.server** (`HTTPServer` + `SimpleHTTPRequestHandler`) — единственный HTTP-сервер.
+- **SQLite** — пользователи и сообщения чата (`database.py`, `hackathon.db`).
+- **httpx** — Hacker News и перевод заголовков; **urllib** — погода Open-Meteo.
 - **Ванильный JS и CSS** — без препроцессоров, без npm, без модульных бандлов.
 - **БЭМ** — именование CSS-классов и разметки.
 - Комментарии в коде — **на русском**.
@@ -14,30 +18,34 @@
 
 ## Структура
 
-- `server.py` — точка входа сервера (порт 8080, раздача корня проекта).
+- `server.py` — точка входа, класс `Handler`, маршрутизация API.
+- `server_config.py` — `HOST` / `PORT` из переменных окружения (Docker: `0.0.0.0`, Render: `PORT=10000`).
+- `auth.py` — сессионные куки, проверка доступа к GET.
+- `database.py` — таблицы `users`, `messages`; `check_user`, `create_user`.
 - `http_utils.py` — JSON-ответы, CORS, запрет раздачи sqlite.
 - `rate_limit.py` — лимит частоты POST.
 - `bot_replies.py` — ответы NeonBot по триггеру.
-- `users.py` — демо-список для GET /api/users.
+- `users.py` — демо-список для `GET /api/users`.
 - `backend.py` — генерация хакерских алиасов и t-string-шаблоны.
-- `api_client.py` — клиент Hacker News (заголовки как в API).
+- `api_client.py` — клиент Hacker News (async, httpx).
 - `translate.py` — перевод заголовков новостей на русский.
-- `weather.py` — погода Москвы через Open-Meteo (`urllib`).
-- `index.html`, `about.html`, `contact.html` — страницы.
+- `weather.py` — погода Москвы через Open-Meteo.
+- `index.html`, `login.html`, `about.html`, `contact.html` — страницы.
 - `css/style.css` — все стили.
-- `js/api.js` — сборка URL `/api/...` (и для `file:`).
-- `js/weather.js` — виджет погоды Москвы.
-- `js/aliases.js` — кнопка «Взломать базу» и список алиасов.
-- `js/news.js` — карточки Hacker News.
-- `js/chat.js` — чат-виджет NeonBot.
-- `data.json` — снимок алиасов (не считать источником истины для UI).
+- `js/api.js` — `apiUrl`, `apiFetch`, `sessionStorage` для логина.
+- `js/session.js` — `@логин` в шапке (`GET /api/me`).
+- `js/login.js`, `js/logout.js` — вход, регистрация, выход.
+- `js/weather.js`, `js/aliases.js`, `js/news.js`, `js/chat.js` — виджеты.
+- `Dockerfile`, `render.yaml`, `requirements.txt` — контейнер и деплой.
+- `docs/` — подробная документация для разработчиков и Cursor Docs.
 
-API бэкенда:
+API бэкенда (см. `docs/api.md`):
 
-- `GET /api/hackers` → `{"aliases": string[]}`
-- `GET /api/weather` → `{"temperature": number}`
+- `POST /api/login`, `/api/register`, `/api/logout`
+- `GET /api/me`, `/api/hackers`, `/api/weather`, `/api/news`, `/api/messages`, `/api/users`
+- `POST /api/messages`
 
-Статика отдаётся из корня проекта. `GET /` → `index.html`.
+Статика из корня. `GET /` → `index.html`. Без сессии защищённые страницы → `/login`.
 
 ## Python
 
@@ -49,8 +57,8 @@ API бэкенда:
 - Современный синтаксис 3.14: `match`/`case`, `|` в типах, без лишнего `from typing import List, Dict, Optional, Union`.
 - В 3.14 отложенные аннотации (PEP 649) включены по умолчанию; `from __future__ import annotations` не добавляй — он включает устаревший PEP 563 (строковые аннотации) и отключает PEP 649.
 - Комментарии и docstring — на русском. Docstring — у публичных функций.
-- Стандартная библиотека по умолчанию. `rich` уже используется в `backend.py` для CLI — не тащи новые сторонние пакеты без явной просьбы.
-- HTTP только через `http.server`; JSON — через `json`; сеть — через `urllib`.
+- Стандартная библиотека по умолчанию. `httpx` и `rich` — см. `requirements.txt`; не тащи новые пакеты без явной просьбы.
+- HTTP-сервер — только `http.server`; JSON — через `json`.
 - Не дублируй заголовки JSON-ответов вручную в каждом хендлере без нужды: выноси общую отправку JSON в хелпер с типами.
 - Не выполняй побочные эффекты (запись файлов, печать в консоль) на уровне модуля, если код импортируется сервером. CLI-вывод — под `if __name__ == "__main__"`.
 
@@ -78,7 +86,7 @@ header = f"{title}"
 - `lang="ru"`, UTF-8, viewport, тёмная `color-scheme`.
 - Семантика: `header`, `nav`, `main`, `footer`. Сохраняй шапку и навигацию на всех страницах.
 - Классы только по БЭМ. Не используй инлайновые стили в новой разметке.
-- Скрипты подключай в конце `body`: `js/api.js` первым, затем виджеты, `js/chat.js` — только там, где нужны.
+- Скрипты подключай в конце `body`: `js/api.js` первым; `js/session.js` и `js/logout.js` на защищённых страницах; виджеты по необходимости.
 
 ## CSS (БЭМ)
 

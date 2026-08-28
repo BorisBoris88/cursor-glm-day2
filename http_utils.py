@@ -36,13 +36,28 @@ def allowed_origins() -> frozenset[str]:
     return frozenset(origins)
 MAX_BODY_BYTES = 4096
 FORBIDDEN_STATIC_SUFFIXES: tuple[str, ...] = (".db", ".sqlite", ".sqlite3")
+CONTENT_SECURITY_POLICY: str = (
+    "default-src 'self'; "
+    "script-src 'self'; "
+    "style-src 'self'; "
+    "img-src 'self' data:; "
+    "connect-src 'self'; "
+    "object-src 'none'; "
+    "base-uri 'self'; "
+    "form-action 'self'; "
+    "frame-ancestors 'none'"
+)
 
 
 class NoStoreHeadersMixin:
-    """Добавляет Cache-Control: no-store ко всем ответам."""
+    """Cache-Control и CSP; для новостей можно задать cache_control_override."""
+
+    cache_control_override: str | None = None
 
     def end_headers(self) -> None:
-        self.send_header("Cache-Control", "no-store")
+        cache_control = self.cache_control_override or "no-store"
+        self.send_header("Cache-Control", cache_control)
+        self.send_header("Content-Security-Policy", CONTENT_SECURITY_POLICY)
         super().end_headers()
 
 

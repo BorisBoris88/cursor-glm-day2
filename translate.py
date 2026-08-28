@@ -156,11 +156,14 @@ async def translate_article_titles(
     async def _run(active_client: httpx.AsyncClient) -> list[dict[str, str | int]]:
         translated_articles: list[dict[str, str | int]] = []
         for article in articles:
-            title_ru = await translate_title(active_client, str(article["title"]))
+            original = str(article["title"])
+            already_done = already_russian(original) or original in _title_ru_cache
+            title_ru = await translate_title(active_client, original)
             translated_articles.append(
                 {"id": article["id"], "title": title_ru, "url": article["url"]}
             )
-            await asyncio.sleep(TRANSLATION_INTER_TITLE_DELAY_SEC)
+            if not already_done:
+                await asyncio.sleep(TRANSLATION_INTER_TITLE_DELAY_SEC)
         return translated_articles
 
     if client is not None:

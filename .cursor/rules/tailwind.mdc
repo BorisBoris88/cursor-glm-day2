@@ -1,0 +1,12 @@
+---
+alwaysApply: true
+---
+
+# Tailwind (правило для агента)
+
+Этот файл **не подключает** Tailwind в браузере — только подсказывает агенту стиль кода.
+
+- Официальная документация: https://tailwindcss.com/docs
+- Версия: **v4**
+- В HTML/CSS проекта NeonShadow **не** подключать Play CDN и **не** добавлять utility-классы Tailwind.
+- Стили страниц — только `css/style.css` (БЭМ). Не вставлять `<script src="https://cdn.jsdelivr.net/...">`.

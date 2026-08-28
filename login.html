@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="dark">
   <title>Вход</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css?v=login-rate-limit">
 </head>
 <body class="page-login">
   <div class="cyber-grid" aria-hidden="true"></div>
@@ -40,8 +41,16 @@
           aria-controls="registerPanel"
         >Регистрация</button>
       </div>
-      <p class="login-form__hint" id="loginHint">Введите учётные данные для входа в неоновый сектор.</p>
-      <form class="login-form__body" id="loginForm" role="tabpanel" aria-labelledby="loginTab" novalidate>
+      <p class="login-form__hint" id="loginHint">
+        Введите учётные данные для входа в неоновый сектор.
+      </p>
+      <form
+        class="login-form__body"
+        id="loginForm"
+        role="tabpanel"
+        aria-labelledby="loginTab"
+        novalidate
+      >
         <label class="login-form__field">
           <span class="login-form__label">Логин</span>
           <input
@@ -67,7 +76,7 @@
           >
         </label>
         <p class="login-form__error" id="loginError" role="alert" hidden>Доступ запрещен</p>
-        <button type="submit" class="login-form__submit hack-btn">Войти</button>
+        <button type="submit" class="login-form__submit hack-btn" id="loginSubmitBtn">Войти</button>
       </form>
       <form
         class="login-form__body login-form__body--hidden"
@@ -102,11 +111,11 @@
           >
         </label>
         <p class="login-form__error" id="registerError" role="alert" hidden>Не удалось зарегистрироваться</p>
-        <button type="submit" class="login-form__submit hack-btn">Создать аккаунт</button>
+        <button type="submit" class="login-form__submit hack-btn" id="registerSubmitBtn">Создать аккаунт</button>
       </form>
     </section>
   </main>
   <script src="js/api.js"></script>
-  <script src="js/login.js"></script>
+  <script src="js/login.js?v=rate-limit-4"></script>
 </body>
 </html>

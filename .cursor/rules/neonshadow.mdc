@@ -1,0 +1,32 @@
+---
+description: Контекст NeonShadow — стек, структура, API, ссылка на docs/
+alwaysApply: true
+---
+
+# NeonShadow
+
+Полная документация: `docs/README.md`, обзор — корневой `README.md`.
+
+## Стек
+
+Python 3.14, `http.server`, SQLite, ванильный HTML/CSS/JS (БЭМ). Без Flask/FastAPI/React/npm.
+Зависимости: `httpx`, `rich` (`requirements.txt`). Сеть: `httpx` (новости, перевод), `urllib` (погода).
+
+## Ключевые модули
+
+- `server.py` + `server_config.py` — HTTP, `HOST`/`PORT` из env
+- `auth.py` — куки `session` + `auth_user`, защита GET
+- `database.py` — users (PBKDF2), messages
+- `login.html`, `js/login.js`, `js/session.js`, `js/logout.js` — auth UI
+
+## API (кратко)
+
+`POST /api/login`, `/api/register`, `/api/logout`; `GET /api/me`, `/api/hackers`, `/api/weather`, `/api/news`, `/api/messages`; `POST /api/messages`.
+Детали: `docs/api.md`.
+
+## Правила
+
+- Комментарии и UI — на русском
+- PEP 649: не добавлять `from __future__ import annotations`
+- Новые эндпоинты — в `Handler` (`server.py`), JSON через `http_utils.send_json`
+- Не рефакторить проект без запроса; сохранять киберпанк-стиль и БЭМ

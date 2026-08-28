@@ -35,12 +35,20 @@ pip install httpx rich pytest
 ### Запуск
 
 ```bash
+pip install -r requirements.txt
 python server.py
 ```
 
-Сайт будет доступен по адресу: [http://localhost:8080/](http://localhost:8080/)
+Сайт: [http://localhost:8080/](http://localhost:8080/) (`PORT` и `HOST` — см. `server_config.py`).
 
-При первом запуске создаётся база `hackathon.db` с таблицами `messages` и `users`.
+### Docker
+
+```bash
+docker build -t neonshadow .
+docker run -p 10000:10000 -e PORT=10000 -e HOST=0.0.0.0 neonshadow
+```
+
+Деплой на Render: `render.yaml`. Подробнее — [docs/deployment.md](docs/deployment.md).
 
 ### Демо-учётка
 
@@ -69,6 +77,17 @@ python server.py
 
 Защищённые страницы и API требуют куку `session=logged_in`. Пароли в БД хранятся как PBKDF2-HMAC-SHA256 хеши (`hashlib`).
 
+## Документация
+
+Подробные разделы в папке **[docs/](docs/README.md)**:
+
+- [Архитектура](docs/architecture.md)
+- [HTTP API](docs/api.md)
+- [Авторизация](docs/auth.md)
+- [Деплой](docs/deployment.md)
+
+Для **Cursor Docs**: Settings → Features → Docs → Add documentation → укажите папку `docs/` или корневой `README.md`.
+
 ## Структура проекта
 
 ```
@@ -81,6 +100,11 @@ python server.py
 ├── weather.py         # Погода Open-Meteo
 ├── backend.py         # Генерация алиасов (CLI + API)
 ├── bot_replies.py     # Ответы NeonBot
+├── server_config.py   # HOST, PORT из env
+├── Dockerfile         # Docker-образ
+├── render.yaml        # Blueprint Render
+├── requirements.txt
+├── docs/              # Документация проекта
 ├── index.html         # Главная
 ├── login.html         # Вход и регистрация
 ├── about.html         # О нас

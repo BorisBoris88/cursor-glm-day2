@@ -3,7 +3,7 @@ import json
 import logging
 import sqlite3
 import urllib.error
-from http.server import HTTPServer, SimpleHTTPRequestHandler
+from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
 
@@ -36,14 +36,24 @@ from http_utils import (
     read_json_body,
     send_json,
 )
-from logging_config import setup_logging
-from rate_limit import allow_post
+from logging_config import ACCESS_LOGGER_NAME, setup_logging
+from news_cache import get_cached_news
+from rate_limit import (
+    LOGIN_FAILED_MAX,
+    LOGIN_FAILED_WINDOW_SEC,
+    LOGIN_RATE_LIMIT_ERROR,
+    allow_login_attempt,
+    allow_post,
+    clear_login_failures,
+    record_login_failure,
+)
 from server_config import server_host, server_port
 from translate import translate_article_titles
 from users import SITE_USERS
 from weather import current_weather_snapshot
 
 logger = logging.getLogger(__name__)
+access_logger = logging.getLogger(ACCESS_LOGGER_NAME)
 
 DIRECTORY = Path(__file__).resolve().parent
 MAX_MESSAGE_LENGTH = 500
@@ -55,6 +65,11 @@ async def _load_news_articles() -> list[dict[str, str | int]]:
     """Топ Hacker News, затем перевод заголовков на русский."""
     articles = await fetch_top_articles()
     return await translate_article_titles(articles)
+
+
+def load_news_cached() -> list[dict[str, str | int]]:
+    """Возвращает новости из памяти, если запись младше TTL, иначе обновляет кэш."""
+    return get_cached_news(lambda: asyncio.run(_load_news_articles()))
 
 
 class Handler(NoStoreHeadersMixin, SimpleHTTPRequestHandler):
@@ -91,6 +106,10 @@ class Handler(NoStoreHeadersMixin, SimpleHTTPRequestHandler):
             self.path = "/login.html"
             return super().do_GET()
 
+        if normalize_path(self.path) == "/favicon.ico":
+            self.path = "/favicon.svg"
+            return super().do_GET()
+
         if self.path == "/api/hackers":
             try:
                 aliases = generate_hacker_aliases()
@@ -123,13 +142,14 @@ class Handler(NoStoreHeadersMixin, SimpleHTTPRequestHandler):
             send_json(self, snapshot)
             return
 
-        if self.path == "/api/news":
+        if normalize_path(self.path) == "/api/news":
             try:
-                articles = asyncio.run(_load_news_articles())
+                articles = load_news_cached()
             except (NewsApiError, ValueError, RuntimeError, OSError):
                 logger.exception("Новости недоступны")
                 send_json(self, {"error": "Новости недоступны"}, status=502)
                 return
+            self.cache_control_override = "private, max-age=30"
             send_json(self, {"articles": articles})
             return
 
@@ -146,16 +166,17 @@ class Handler(NoStoreHeadersMixin, SimpleHTTPRequestHandler):
         return super().do_GET()
 
     def do_POST(self) -> None:
-        if self.path == "/api/login":
+        path = normalize_path(self.path)
+        if path == "/api/login":
             self._handle_login_post()
             return
-        if self.path == "/api/register":
+        if path == "/api/register":
             self._handle_register_post()
             return
-        if self.path == "/api/logout":
+        if path == "/api/logout":
             self._handle_logout_post()
             return
-        if self.path == "/api/messages":
+        if path == "/api/messages":
             self._handle_messages_post()
             return
         self.send_error(404, "Not Found")
@@ -206,6 +227,11 @@ class Handler(NoStoreHeadersMixin, SimpleHTTPRequestHandler):
             send_json(self, {"error": "Слишком много запросов"}, status=429)
             return
 
+        if not allow_login_attempt(client_ip):
+            logger.warning("Лимит неудачных входов превышен для %s", client_ip)
+            send_json(self, {"error": LOGIN_RATE_LIMIT_ERROR}, status=429)
+            return
+
         credentials = self._parse_credentials()
         if credentials is None:
             return
@@ -213,13 +239,21 @@ class Handler(NoStoreHeadersMixin, SimpleHTTPRequestHandler):
 
         try:
             if not check_user(username, password):
-                send_json(self, {"error": "Доступ запрещен"}, status=401)
+                record_login_failure(client_ip)
+                if not allow_login_attempt(client_ip):
+                    logger.warning(
+                        "Лимит неудачных входов превышен для %s", client_ip
+                    )
+                    send_json(self, {"error": LOGIN_RATE_LIMIT_ERROR}, status=429)
+                else:
+                    send_json(self, {"error": "Доступ запрещен"}, status=401)
                 return
         except sqlite3.Error:
             logger.exception("Ошибка проверки пользователя")
             send_json(self, {"error": "Ошибка базы данных"}, status=500)
             return
 
+        clear_login_failures(client_ip)
         send_json(
             self,
             {"ok": True},
@@ -271,20 +305,20 @@ class Handler(NoStoreHeadersMixin, SimpleHTTPRequestHandler):
             send_json(self, {"error": "Некорректный JSON"}, status=400)
             return
 
-        username = data.get("username")
-        text = data.get("text")
-        if not isinstance(username, str) or not username.strip():
-            send_json(self, {"error": "Нужно поле username"}, status=400)
+        username = get_session_username(self)
+        if username is None:
+            send_json(self, {"error": "Не авторизован"}, status=403)
             return
+        if len(username) > MAX_USERNAME_LENGTH:
+            send_json(self, {"error": "Слишком длинное имя"}, status=400)
+            return
+
+        text = data.get("text")
         if not isinstance(text, str) or not text.strip():
             send_json(self, {"error": "Нужно поле text"}, status=400)
             return
 
-        username = username.strip()
         text = text.strip()
-        if len(username) > MAX_USERNAME_LENGTH:
-            send_json(self, {"error": "Слишком длинное имя"}, status=400)
-            return
         if len(text) > MAX_MESSAGE_LENGTH:
             send_json(self, {"error": "Слишком длинное сообщение"}, status=400)
             return
@@ -308,8 +342,8 @@ class Handler(NoStoreHeadersMixin, SimpleHTTPRequestHandler):
         send_json(self, {"messages": response_messages}, status=201)
 
     def log_message(self, fmt: str, *args: object) -> None:
-        """Пишет access-лог http.server через модуль logging."""
-        logger.info("%s - %s", self.address_string(), fmt % args)
+        """Пишет access-лог http.server: в файл всегда, в консоль — выборочно."""
+        access_logger.info("%s - %s", self.address_string(), fmt % args)
 
 
 if __name__ == "__main__":
@@ -317,8 +351,23 @@ if __name__ == "__main__":
     init_db()
     host = server_host()
     port = server_port()
-    server = HTTPServer((host, port), Handler)
+    try:
+        server = ThreadingHTTPServer((host, port), Handler)
+    except OSError as exc:
+        logger.error(
+            "Не удалось занять порт %s (%s). Вероятно, уже запущен старый server.py. "
+            "Закройте лишние процессы: netstat -ano | findstr :%s",
+            port,
+            exc,
+            port,
+        )
+        raise SystemExit(1) from exc
     logger.info("Сервер запущен: http://%s:%s/", host, port)
+    logger.info(
+        "Защита /api/login: блокировка после %s неудачных попыток за %.0f с",
+        LOGIN_FAILED_MAX,
+        LOGIN_FAILED_WINDOW_SEC,
+    )
     logger.info("Нажмите Ctrl+C для остановки.")
     try:
         server.serve_forever()

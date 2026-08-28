@@ -18,7 +18,15 @@ from auth import (  # noqa: E402
 )
 from bot_replies import reply_for  # noqa: E402
 from http_utils import is_forbidden_static  # noqa: E402
-from rate_limit import POST_MAX_PER_WINDOW, allow_post  # noqa: E402
+from rate_limit import (  # noqa: E402
+    LOGIN_FAILED_MAX,
+    POST_MAX_PER_WINDOW,
+    allow_login_attempt,
+    allow_post,
+    clear_login_failures,
+    normalize_client_ip,
+    record_login_failure,
+)
 import rate_limit as rate_limit_module  # noqa: E402
 
 
@@ -65,9 +73,11 @@ def test_is_login_get_path_matches_login_routes() -> None:
 
 
 def test_is_public_static_path_allows_assets() -> None:
-    """Статика css/js доступна без сессии."""
+    """Статика css/js и favicon доступны без сессии."""
     assert is_public_static_path("/css/style.css") is True
     assert is_public_static_path("/js/weather.js?v=widgets") is True
+    assert is_public_static_path("/favicon.svg") is True
+    assert is_public_static_path("/favicon.ico") is True
     assert is_public_static_path("/api/weather") is False
 
 
@@ -122,3 +132,37 @@ def test_allow_post_blocks_after_limit() -> None:
         assert allow_post(client) is True
     assert allow_post(client) is False
     rate_limit_module._post_hits.clear()
+
+
+def test_login_rate_limit_blocks_after_three_failures() -> None:
+    """После 3 неудачных входов с одного IP следующая попытка блокируется."""
+    rate_limit_module._login_failures.clear()
+    client = "203.0.113.20"
+
+    for _ in range(LOGIN_FAILED_MAX - 1):
+        assert allow_login_attempt(client) is True
+        record_login_failure(client)
+
+    record_login_failure(client)
+    assert allow_login_attempt(client) is False
+    rate_limit_module._login_failures.clear()
+
+
+def test_clear_login_failures_resets_counter() -> None:
+    """Успешный вход сбрасывает счётчик неудачных попыток."""
+    rate_limit_module._login_failures.clear()
+    client = "203.0.113.21"
+
+    record_login_failure(client)
+    record_login_failure(client)
+    clear_login_failures(client)
+
+    assert allow_login_attempt(client) is True
+    rate_limit_module._login_failures.clear()
+
+
+def test_normalize_client_ip_maps_localhost() -> None:
+    """::1 и IPv4-mapped localhost считаются одним IP."""
+    assert normalize_client_ip("::1") == "127.0.0.1"
+    assert normalize_client_ip("::ffff:127.0.0.1") == "127.0.0.1"
+    assert normalize_client_ip("203.0.113.1") == "203.0.113.1"

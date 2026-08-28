@@ -1,6 +1,7 @@
 """Асинхронный клиент Hacker News через httpx."""
 
 import asyncio
+from urllib.parse import urlparse
 
 import httpx
 
@@ -36,6 +37,12 @@ def _discussion_url(story_id: int) -> str:
     return HN_DISCUSSION_URL.format(story_id=story_id)
 
 
+def is_http_url(url: str) -> bool:
+    """True, если URL с схемой http/https и непустым хостом."""
+    parsed = urlparse(url.strip())
+    return parsed.scheme in ("http", "https") and bool(parsed.netloc)
+
+
 def _parse_article(payload: object, story_id: int) -> dict[str, str | int] | None:
     """Достаёт заголовок и ссылку; пропускает удалённые записи."""
     if not isinstance(payload, dict):
@@ -47,7 +54,7 @@ def _parse_article(payload: object, story_id: int) -> dict[str, str | int] | Non
         return None
 
     raw_url = payload.get("url")
-    if isinstance(raw_url, str) and raw_url.strip():
+    if isinstance(raw_url, str) and is_http_url(raw_url):
         url = raw_url.strip()
     else:
         url = _discussion_url(story_id)
